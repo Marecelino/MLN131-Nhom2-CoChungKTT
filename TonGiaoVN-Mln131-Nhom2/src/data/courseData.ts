@@ -1,4 +1,4 @@
-import type { Course, QuizQuestion  , Topic , TimelineEvent} from '../types';
+import type { Course, QuizQuestion, Topic, TimelineEvent } from '../types';
 
 
 
@@ -9,32 +9,49 @@ export const religionCourse: Course = {
   description:
     "Khóa học phân tích chính sách tôn giáo Việt Nam, các âm mưu lợi dụng và vai trò của sinh viên trong bối cảnh hiện đại, dựa trên các nghiên cứu và giáo trình CNXHKH.",
   lessons: [
-  {
-    id: 1,
-    chapter: 1,
-    title: "Bức tranh Toàn cảnh Tôn giáo Việt Nam",
-    duration: "30 phút",
-    description:
-      "Quan điểm của Đảng, Nhà nước và bối cảnh đa dạng, hòa bình của tôn giáo tại Việt Nam.",
-    content: `
+    {
+      id: 1,
+      chapter: 1,
+      title: "Bức tranh Toàn cảnh Tôn giáo Việt Nam",
+      duration: "30 phút",
+      description:
+        "Quan điểm của Đảng, Nhà nước và bối cảnh đa dạng, hòa bình của tôn giáo tại Việt Nam.",
+      content: `
       <h3 class="lesson-modal__subtitle">Nền tảng & Thực trạng</h3>
-      <p>Việt Nam là một quốc gia đa tôn giáo: hiện có 16 tôn giáo với 43 tổ chức được công nhận, hơn 29.000 cơ sở thờ tự và hàng chục nghìn chức sắc, chức việc. Các tôn giáo nội sinh (Cao Đài, Hòa Hảo) và tôn giáo du nhập (Phật giáo, Công giáo, Tin Lành, Hồi giáo…) tồn tại bên nhau, mang nhiều dấu ấn văn hóa địa phương và chung sống hòa bình trên diện rộng.</p>
+      <p>Việt Nam là một quốc gia có nhiều tôn giáo.
+Nước ta hiện nay có 43 tổ chức thuộc 16 tôn giáo đã
+được công nhận và cấp đăng ký hoạt động với khoảng
+57.000 chức sắc, 157.000 chức việc và hơn 29.000 cơ sở
+thờ tự. Các tôn giáo nội sinh (Cao Đài, Hòa Hảo) và tôn giáo du nhập (Phật giáo, Công giáo, Tin Lành, Hồi giáo…) tồn tại bên nhau, mang nhiều dấu ấn văn hóa địa phương và chung sống hòa bình trên diện rộng.</p>
 
       <h3 class="lesson-modal__subtitle">Đặc điểm nổi bật</h3>
       <ul class="lesson-modal__list">
         <li>Đa dạng về nguồn gốc, truyền thống và hình thức tổ chức.</li>
-        <li>Tín đồ phần lớn là lao động, có tinh thần yêu nước, gắn bó với cộng đồng.</li>
+        <li>Tín đồ các tôn giáo Việt Nam phần lớn là nhân
+dân lao động, có lòng yêu nước, tinh thần dân tộc.
+</li>
+
         <li>Chức sắc tôn giáo có vai trò quan trọng về đời sống tâm linh và có ảnh hưởng xã hội.</li>
+      <li>Chức sắc tôn giáo là tín đồ có chức vụ, phẩm sắc trong
+tôn giáo, họ tự nguyện thực hiện thường xuyên nếp sống
+riêng theo giáo lý, giáo luật của tôn giáo mà mình tin theo.
+Về mặt tôn giáo, chức năng của họ là truyền bá, thực hành
+giáo lý, giáo luật, lễ nghi, quản lý tổ chức của tôn giáo,
+duy trì, củng cố, phát triển tôn giáo, chuyên chăm lo đến
+đời sống tâm linh của tín đồ</li>
+<li>các tôn giáo ở Việt Nam đều có quan hệ với
+các tổ chức, cá nhân tôn giáo ở nước ngoài</li>
       </ul>
 
       <blockquote>
         "Không có tôn giáo nào du nhập vào Việt Nam mà không mang dấu ấn bản sắc văn hóa Việt Nam."
-        <cite>— Tài liệu tham khảo</cite>
+        <cite>—  Theo Báo Nhân dân điện tử: "Tôn trọng, bảo đảm quyền tự
+do tín ngưỡng của nhân dân", ngày 22/12/2020</cite>
       </blockquote>
-<!-- Nhúng video YouTube bắt đầu từ 443 giây -->
+<!-- Nhúng video YouTube -->
 <div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/gzkVgU7J42k"
+    src="https://www.youtube-nocookie.com/embed/gzkVgU7J42k "
     title="Video minh họa phân tích tình huống (điểm bắt đầu 7:23)"
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
     frameborder="0"
@@ -46,49 +63,79 @@ export const religionCourse: Course = {
 
       <!-- Sources:  -->
     `
-  },
-  {
-    id: 2,
-    chapter: 2,
-    title: "Âm mưu & Thủ đoạn Lợi dụng Tôn giáo",
-    duration: "60 phút",
-    description:
-      "Phân tích chiến lược 'Diễn biến hòa bình' và 4 thủ đoạn chính mà các thế lực thù địch sử dụng.",
-    content: `
+    },
+    {
+      id: 2,
+      chapter: 2,
+      title: "Âm mưu & Thủ đoạn Lợi dụng Tôn giáo",
+      duration: "60 phút",
+      description:
+        "Phân tích chiến lược 'Diễn biến hòa bình' và 4 thủ đoạn chính mà các thế lực thù địch sử dụng.",
+      content: `
       <h3 class="lesson-modal__subtitle">Chiến lược "Diễn biến hòa bình" và tôn giáo</h3>
-      <p>Các thế lực thù địch coi tôn giáo là "lĩnh vực mũi nhọn" để gây mất ổn định nội bộ — lợi dụng tính nhạy cảm của niềm tin tôn giáo, mối quan hệ quốc tế của các hội nhóm tôn giáo và môi trường mạng để khuếch đại vấn đề.</p>
+      <p>Đây là một chiến lược phi quân sự, sử dụng các thủ đoạn tinh vi nhằm tác động chuyển hóa từ bên trong trên mọi lĩnh vực, với mục tiêu cuối cùng là xóa bỏ vai trò lãnh đạo của Đảng Cộng sản và lật đổ chế độ xã hội chủ nghĩa.</p>
+      <p>Các thế lực thù địch coi vấn đề dân tộc và tôn giáo được xem là những "mũi nhọn" công kích do tính chất nhạy cảm, phức tạp và khả năng thu hút sự chú ý của dư luận quốc tế</p>
 
       <h3 class="lesson-modal__subtitle">Bốn thủ đoạn chính</h3>
       <ol class="lesson-modal__list--ordered">
+      <li><strong>Lợi dụng quyền tự do tín ngưỡng</strong> thường núp dưới chiêu bài "đấu tranh cho dân chủ, nhân quyền, tự do tôn giáo" để che đậy ý đồ thực sự là chống phá chính quyền</li>
         <li><strong>Xuyên tạc chính sách:</strong> Phát tán thông tin sai lệch, vu cáo "đàn áp tôn giáo", bóp méo nội dung Luật Tín ngưỡng, tôn giáo.</li>
         <li><strong>Kích động tranh chấp đất đai:</strong> Lợi dụng khiếu kiện liên quan cơ sở thờ tự để tạo điểm nóng, xuyên tạc thực tế thành "cướp đất tôn giáo".</li>
         <li><strong>Thành lập tổ chức bất hợp pháp:</strong> Lập hội, nhóm núp bóng tôn giáo nhưng thực chất mang mục tiêu chính trị, tập hợp lực lượng chống đối.</li>
-        <li><strong>Quốc tế hóa vấn đề:</strong> Chuyển các vụ việc đã bị khuếch đại ra diễn đàn quốc tế để gây sức ép và tạo câu chuyện "vi phạm nhân quyền".</li>
+        <li><strong>Quốc tế hóa vấn đề:</strong> trị cố tình tạo ra hoặc thổi phồng các vụ việc phức tạp trong nước, sau đó xuyên tạc, bóp méo sự thật và vu cáo Việt Nam "đàn áp tôn giáo" tại các diễn đàn, hội nghị quốc tế. Mục đích của hành động này là hạ thấp uy tín của Việt Nam, tạo cớ để các chính phủ và tổ chức nước ngoài can thiệp vào công việc nội bộ</li>
       </ol>
 
       <div class="note-card note-card--danger"><strong>Lưu ý thực tiễn:</strong> Những chiến thuật này thường vận hành theo chuỗi: từ tạo/khai thác mâu thuẫn địa phương → khuếch đại thông tin → tổ chức tập hợp → vận động quốc tế.</div>
-
-      <!-- Sources:  -->
-    `
-  },
-  {
-    id: 3,
-    chapter: 3,
-    title: "Nghiên cứu Tình huống: Tây Nguyên & Tây Bắc",
-    duration: "50 phút",
-    description:
-      "Đi sâu vào âm mưu thành lập 'Nhà nước Đê-ga' và 'Nhà nước Mông'.",
-    content: `
-      <h3 class="lesson-modal__subtitle">Tình huống 1: Tây Nguyên — FULRO và "Tin lành Đê-ga"</h3>
-      <p>Từ việc lợi dụng khó khăn kinh tế và bất cập lịch sử, một số tổ chức đội lốt tôn giáo (như các nhóm liên quan đến FULRO khi lưu vong) đã cố gắng chính trị hóa đức tin, thành lập các tổ chức mang màu sắc ly khai. Đỉnh điểm là các vụ gây rối quy mô (ví dụ các sự kiện năm 2001 và 2004) đã được phân tích là có sự tổ chức và lợi dụng tôn giáo để kích động bạo lực.</p>
-
-      <h3 class="lesson-modal__subtitle">Tình huống 2: Tây Bắc — Pha trộn tà đạo và chia rẽ văn hóa</h3>
-      <p>Ở một số vùng Tây Bắc, thủ đoạn là phát triển các dạng tà đạo (pha trộn giáo lý, yêu cầu từ bỏ phong tục, thờ cúng tổ tiên) để cô lập tín đồ, làm suy yếu liên hệ cộng đồng và dễ thao túng về chính trị, với mục tiêu lâu dài là kích động ly khai hoặc tách rời.</p>
-
-      <div class="note-card note-card--danger"><strong>Cảnh báo chiến lược:</strong> Các âm mưu này thường nhắm vào vùng nghèo, vùng sâu, nơi tồn tại các mâu thuẫn kinh tế — do đó giải pháp phải kết hợp an ninh với phát triển.</div>
 <div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
   <iframe
-    src="https://www.youtube.com/embed/hcoqCCGQFAI
+    src="https://www.youtube-nocookie.com/embed/E9PVmZ4O_CQ "
+    title="Video minh họa phân tích tình huống (điểm bắt đầu 7:23)"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
+      <!-- Sources:  -->
+    `
+    },
+    {
+      id: 3,
+      chapter: 3,
+      title: "Các Vụ việc Điển hình",
+      duration: "50 phút",
+      description:
+        "Thực tiễn tại Việt Nam đã ghi nhận nhiều vụ việc phức tạp, cho thấy sự đa dạng trong các hình thức lợi dụng tôn giáo, từ các tổ chức phản động có mục tiêu chính trị rõ ràng đến các hiện tượng 'tà đạo' gây bất ổn xã hội nghiêm trọng.",
+      content: `
+      <h3 class="lesson-modal__subtitle">Tình huống 1: Tây Nguyên và Tây Bắc: Từ FULRO đến Khủng bố</h3>
+      <p>Khu vực Tây Nguyên và Tây Bắc, với đặc điểm đa dạng về dân tộc và tôn giáo, từ lâu đã là địa bàn trọng điểm mà các thế lực thù địch tập trung chống phá. Lợi dụng những khó khăn trong đời sống và sự thiếu hiểu biết của một bộ phận đồng bào dân tộc thiểu số, chúng đã tìm cách nhen nhóm tư tưởng ly khai, tự trị.</p>
+<p><strong>●	Vụ tấn công khủng bố tại Đắk Lắk (11/6/2023): </strong> Đây là đỉnh điểm của hoạt động lợi dụng vấn đề dân tộc, tôn giáo, thể hiện sự leo thang về mức độ bạo lực và tính chất nguy hiểm. Một nhóm gần 100 đối tượng đã sử dụng vũ khí tấn công vào hai trụ sở Ủy ban nhân dân xã Ea Tiêu và Ea Ktur (huyện Cư Kuin), sát hại 9 người (bao gồm bí thư xã, chủ tịch xã, công an) và làm nhiều người khác bị thương.Hành vi này đã được các cơ quan chức năng xác định là "khủng bố nhằm chống chính quyền nhân dân", với tính chất man rợ, mất nhân tính. Cuộc điều tra đã chỉ ra vai trò chỉ đạo, hậu thuẫn trực tiếp từ các tổ chức phản động lưu vong có trụ sở tại Mỹ như "Nhóm Hỗ trợ người Thượng (MSGI)" và "Người Thượng vì công lý (MSFJ)", với mưu đồ thành lập "Nhà nước Đêga". Phiên tòa xét xử sau đó đã truy tố 100 bị cáo với các tội danh đặc biệt nghiêm trọng.</p>
+<div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/t0gZwgSfDb8
+"
+    title="Video minh họa: Mô tả ngắn"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
+<p><strong>●	"Hội thánh Tin lành Đấng Christ": </strong>Tổ chức này được xác định là một "tổ chức phản động đội lốt tôn giáo" để tiến hành các hoạt động xâm phạm an ninh quốc gia.19 Về bản chất, đây là sự biến tướng của tổ chức "Tin lành Đêga" trước đây, lợi dụng tín ngưỡng Tin lành để tuyên truyền tư tưởng ly khai, tự trị trong đồng bào dân tộc thiểu số ở Tây Nguyên.</p>
+  <img src="https://congan.daklak.gov.vn/documents/10181/1035057/1.png/0095e016-f603-494e-a0e1-63916a2d8a94?t=1711694334235 "  class="lesson-modal__image" />
+<p><strong>●	Tổ chức bất hợp pháp "Dương Văn Mình": </strong>đã tồn tại 33 năm, núp bóng tín ngưỡng, tôn giáo nhằm tập hợp lực lượng, tuyên truyền tư tưởng ly khai, lập "Nhà nước riêng của người Mông" do Dương Văn Mình làm "vua", gây ra nhiều vụ việc phức tạp về ANTT, tiềm ẩn nguy cơ mất ổn định an ninh quốc gia.</p>
+  <img src="https://baotuyenquang.com.vn/media/images/2023/12/img_20231227155234.jpg "  class="lesson-modal__image" />
+<h3 class="lesson-modal__subtitle">Tình huống 2: Hiện tượng "Tà đạo" và các Tổ chức Tôn giáo Trái phép</h3>
+<p><strong>"Hội thánh của Đức Chúa Trời " </strong></p>
+<p><strong>●	Nguồn gốc và Bản chất :</strong> Tổ chức này có tên đầy đủ là "World mission society Church of God" (WMSCOG), do Ahn Sahng Hong thành lập tại Hàn Quốc năm 1964 và du nhập vào Việt Nam từ khoảng năm 2001. Mặc dù lấy giáo lý từ Kinh Thánh của đạo Tin lành, nhưng tổ chức này đã xuyên tạc, bóp méo và tự đưa ra những tín điều lệch lạc như tin vào "Đức Chúa Trời Mẹ". Chính vì vậy, HTĐCTM bị hầu hết các tổ chức Tin lành chính thống coi là "tà đạo" và không được công nhận.</p>
+     <p><strong>●	Phương thức hoạt động: </strong>hoạt động một cách tinh vi, lén lút và mang đậm màu sắc của mô hình kinh doanh đa cấp. Chúng thường nhắm đến các đối tượng dễ bị tổn thương như sinh viên, phụ nữ nội trợ, những người đang gặp khó khăn, bất trắc trong cuộc sống. Để tiếp cận "con mồi", chúng núp bóng dưới nhiều hình thức như các trung tâm từ thiện, các buổi hội thảo kỹ năng, bán hàng online, sau đó dần dần thao túng tâm lý bằng cách gieo rắc nỗi sợ hãi về "ngày tận thế".</p>
+<p><strong>●	Hệ lụy xã hội: </strong> gây ra những hậu quả nặng nề. Nhiều gia đình tan vỡ khi có người thân tham gia, mù quáng tin theo những lời rao giảng cực đoan như đập bỏ bàn thờ tổ tiên, coi cha mẹ, người thân là "ma quỷ", bỏ bê học hành, công việc, dâng hiến tài sản cho tổ chức. Các hành vi này không chỉ vi phạm nghiêm trọng Luật Tín ngưỡng, tôn giáo mà còn đi ngược lại hoàn toàn với thuần phong mỹ tục và đạo lý "uống nước nhớ nguồn" của dân tộc Việt Nam. Trước tình hình đó, Bộ Công an và công an các địa phương đã liên tục phát đi cảnh báo, đồng thời phát hiện và xử lý hàng chục vụ việc, giải tán nhiều tụ điểm sinh hoạt trái phép trên cả nước.</p>
+     <div class="note-card note-card--danger"><strong>Cảnh báo chiến lược:</strong> Các âm mưu này thường nhắm vào vùng nghèo, vùng sâu, nơi tồn tại các mâu thuẫn kinh tế — do đó giải pháp phải kết hợp an ninh với phát triển.</div>
+<div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/L04ovtBOVfs
 "
     title="Video minh họa: Mô tả ngắn"
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
@@ -100,54 +147,97 @@ export const religionCourse: Course = {
 </div>
       <!-- Sources:  -->
     `
-  },
-  {
-    id: 4,
-    chapter: 4,
-    title: "Chính sách Nhất quán & Hệ thống Pháp luật",
-    duration: "55 phút",
-    description:
-      "Phân tích Hiến pháp, Luật Tín ngưỡng Tôn giáo và công cụ pháp lý để bảo vệ an ninh quốc gia.",
-    content: `
+    },
+    {
+      id: 4,
+      chapter: 4,
+      title: "Chính sách Nhất quán & Hệ thống Pháp luật",
+      duration: "55 phút",
+      description:
+        "Phân tích Hiến pháp, Luật Tín ngưỡng Tôn giáo và công cụ pháp lý để bảo vệ an ninh quốc gia.",
+      content: `
       <h3 class="lesson-modal__subtitle">Khung pháp lý cơ bản</h3>
       <ul class="lesson-modal__list">
-        <li><strong>Hiến pháp 2013 — Điều 24:</strong> Khẳng định quyền tự do tín ngưỡng, tôn giáo; tôn giáo bình đẳng trước pháp luật và Nhà nước tôn trọng, bảo hộ quyền này.</li>
-        <li><strong>Luật Tín ngưỡng, Tôn giáo 2016:</strong> Thiết lập hành lang pháp lý minh bạch (định nghĩa rõ thuật ngữ, quy định quyền và thủ tục, đơn giản hóa thủ tục công nhận tổ chức tôn giáo).</li>
-        <li><strong>Bộ luật Hình sự — Điều 116 (sửa đổi):</strong> Hình sự hóa hành vi lợi dụng tôn giáo để phá hoại chính sách đoàn kết, chia rẽ dân tộc hoặc chống chính quyền (khi có mục đích chính trị rõ ràng).</li>
+        <li><strong>Hiến pháp 2013 — Điều 24:</strong>
+            <ol class="lesson-modal__list--ordered">
+            <li>Mọi người có quyền tự do tín ngưỡng, tôn giáo, theo hoặc không theo một tôn giáo nào. Các tôn giáo bình đẳng trước pháp luật.</li>
+           <li>  Nhà nước tôn trọng và bảo hộ quyền tự do tín ngưỡng, tôn giáo.</li>
+            <li> Không ai được xâm phạm tự do tín ngưỡng, tôn giáo hoặc lợi dụng tín ngưỡng, tôn giáo để vi phạm pháp luật</li>
+        </li></ol>
+        <li><strong>Luật số 02/2016/QH14 của Quốc hội: LUẬT TÍN NGƯỠNG, TÔN GIÁO : </strong>được Quốc hội Việt Nam thông qua vào ngày 18 tháng 11 năm 2016 và có hiệu lực từ 01 tháng 01 năm 2018. Luật này quy định về quyền tự do tín ngưỡng, tôn giáo, hoạt động tín ngưỡng và tôn giáo, tổ chức tôn giáo, cũng như quyền và nghĩa vụ của các cơ quan, tổ chức, cá nhân liên quan đến hoạt động này. Luật nhấn mạnh việc Nhà nước tôn trọng và bảo vệ quyền tự do tín ngưỡng, tôn giáo của mọi người, đồng thời bảo vệ các cơ sở tín ngưỡng và tài sản hợp pháp. </li>
+        <li><strong>Bộ luật Hình sự — Điều 116 (sửa đổi):</strong> Tội phá hoại chính sách đoàn kết được quy định tại Điều 116 Bộ luật Hình sự 2015 (sửa đổi, bổ sung 2025), xử lý hành vi xâm phạm khối đại đoàn kết dân tộc và đoàn kết tôn giáo. Đây là tội xâm phạm an ninh quốc gia, ảnh hưởng trực tiếp đến ổn định chính trị và trật tự xã hội.</li>
       </ul>
 
       <div class="note-card note-card--info"><strong>Ghi chú:</strong> Hệ thống pháp luật vận hành theo nguyên tắc kép: bảo vệ hoạt động tôn giáo hợp pháp đồng thời có công cụ xử lý khi hoạt động đó bị lạm dụng cho mục tiêu chống phá.</div>
-
+<div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/hVJ0967bh7I
+"
+    title="Video minh họa: Mô tả ngắn"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
       <!-- Sources:  -->
     `
-  },
-  {
-    id: 5,
-    chapter: 5,
-    title: "Giải pháp từ Gốc rễ & Công tác Vận động",
-    duration: "45 phút",
-    description:
-      "Vai trò của phát triển kinh tế - xã hội và công tác vận động quần chúng.",
-    content: `
+    },
+    {
+      id: 5,
+      chapter: 5,
+      title: "Giải pháp từ Gốc rễ & Công tác Vận động",
+      duration: "45 phút",
+      description:
+        "Vai trò của phát triển kinh tế - xã hội và công tác vận động quần chúng.",
+      content: `
       <h3 class="lesson-modal__subtitle">Giải pháp căn cơ</h3>
       <p>Giải quyết nguyên nhân gốc rễ (đói nghèo, lạc hậu, thiếu tiếp cận thông tin) là nền tảng để vô hiệu hóa thủ đoạn lợi dụng tôn giáo. Chương trình phát triển kinh tế - xã hội (ví dụ Chương trình 135) tập trung đầu tư hạ tầng, sản xuất và đào tạo tại vùng đặc biệt khó khăn, góp phần giảm nghèo và làm mất "mảnh đất màu mỡ" cho tuyên truyền phá hoại.</p>
 
       <h3 class="lesson-modal__subtitle">Công tác vận động quần chúng</h3>
-      <div class="note-card note-card--info"><strong>Nguyên tắc:</strong> Vận động đồng bào tôn giáo thông qua chính sách, tuyên truyền đúng đắn, tôn vinh truyền thống "tốt đời, đẹp đạo" và củng cố khối đại đoàn kết toàn dân.</div>
-
+      <div class="note-card note-card--info"><strong>Nguyên tắc:</strong> nhằm
+động viên đồng bào nêu cao tinh thần yêu nước, ý thức bảo
+vệ độc lập và thống nhất đất nước thông qua việc thực
+hiện tốt các chính sách kinh tế - xã hội, an ninh, quốc
+phòng, bảo đảm lợi ích vật chất và tinh thần của nhân dân
+nói chung, trong đó có đồng bào tôn giáo.
+</div>
+<p>Đẩy mạnh phát triển kinh tế, xã hội, văn hóa vùng
+đồng bào theo các tôn giáo, nhằm nâng cao trình độ, đời
+sống mọi mặt cho đồng bào, làm cho quần chúng nhân dân
+nhận thức đầy đủ, đúng đắn đường lối, chính sách của
+Đảng, pháp luật của Nhà nước, tích cực, nghiêm chỉnh
+thực hiện đường lối, chính sách, pháp luật, trong đó có
+chính sách, pháp luật về tín ngưỡng, tôn giáo.</p>
+<div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/HKI0eipc9tI
+"
+    title="Video minh họa: Mô tả ngắn"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
       <!-- Sources:  -->
     `
-  },
-  {
-    id: 6,
-    chapter: 6,
-    title: "Vai trò và Trách nhiệm của Sinh viên",
-    duration: "40 phút",
-    description:
-      "Sinh viên là lực lượng xung kích trong việc bảo vệ nền tảng tư tưởng trên không gian mạng.",
-    content: `
+    },
+    {
+      id: 6,
+      chapter: 6,
+      title: "Vai trò và Trách nhiệm của Sinh viên",
+      duration: "40 phút",
+      description:
+        "Sinh viên là lực lượng xung kích trong việc bảo vệ nền tảng tư tưởng trên không gian mạng.",
+      content: `
       <h3 class="lesson-modal__subtitle">Nâng cao "Miễn dịch số"</h3>
-      <p>Sinh viên cần phát triển kỹ năng kiểm chứng thông tin, nhận diện ngôn ngữ kích động, nguồn tin thiếu kiểm chứng, ảnh/video cắt ghép để tránh bị lôi kéo. Việc chủ động kiểm chứng trước khi chia sẻ là bắt buộc.</p>
+      <div class="note-card note-card--danger">Sinh viên là một trong những mục tiêu chính của chiến lược "diễn biến hòa bình" vì đây là lực lượng đông đảo, nhạy bén với công nghệ, và sẽ nắm giữ các vị trí quan trọng trong xã hội tương lai. Các thế lực thù địch tiếp cận sinh viên thông qua nhiều kênh đa dạng như mạng xã hội, các chương trình học bổng, các sản phẩm văn hóa, hội thảo quốc tế... nhằm gieo rắc tư tưởng hoài nghi, lôi kéo, kích động họ có những phát ngôn, hành động chống đối.</div>
+      <div class="note-card note-card--info">
+Do đó, nhiệm vụ hàng đầu của sinh viên là phải trang bị cho mình "năng lực miễn dịch số", tức là khả năng nhận diện và sàng lọc thông tin. Sinh viên cần học cách phát hiện các dấu hiệu của thông tin xấu độc, tuyên truyền phá hoại: ngôn ngữ kích động, cực đoan; các nguồn tin không rõ ràng, thiếu kiểm chứng; việc sử dụng hình ảnh, video bị cắt ghép, sai bối cảnh; và các trang mạng, tài khoản cá nhân có lịch sử đăng tải thông tin tiêu cực, một chiều, công kích Nhà nước.Việc tiếp xúc với quá nhiều thông tin sai lệch có thể dẫn đến tâm lý "bình thường hóa" tin giả, vì vậy, việc xây dựng một bộ lọc tư duy phê phán là vô cùng cần thiết
+</div>
 
       <h3 class="lesson-modal__subtitle">Hành động và tổ chức</h3>
       <ul class="lesson-modal__list">
@@ -160,20 +250,20 @@ export const religionCourse: Course = {
 
       <!-- Sources:  -->
     `
-  },
-  {
-  id: 7,
-  chapter: 7,
-  title: "Chính sách của Đảng và Nhà nước về Tín ngưỡng — Tôn giáo",
-  duration: "50 phút",
-  description:
-    "Nền tảng hiến pháp, luật pháp và quan điểm nhất quán của Đảng — cách thức thực hiện chính sách và giới hạn pháp lý.",
-  content: `
+    },
+    {
+      id: 7,
+      chapter: 7,
+      title: "Chính sách của Đảng và Nhà nước về Tín ngưỡng — Tôn giáo",
+      duration: "50 phút",
+      description:
+        "Nền tảng hiến pháp, luật pháp và quan điểm nhất quán của Đảng — cách thức thực hiện chính sách và giới hạn pháp lý.",
+      content: `
     <h3 class="lesson-modal__subtitle">1. Nền tảng hiến định và quan điểm cơ bản</h3>
     <p>Hiến pháp năm 2013 khẳng định: <em>"Mọi người có quyền tự do tín ngưỡng, tôn giáo, theo hoặc không theo một tôn giáo nào. Các tôn giáo bình đẳng trước pháp luật. Nhà nước tôn trọng và bảo hộ quyền tự do tín ngưỡng, tôn giáo."</em></p>
     <p>Đảng ta nhận định: <strong>tín ngưỡng, tôn giáo là nhu cầu tinh thần của một bộ phận nhân dân, đang và sẽ tồn tại cùng dân tộc trong quá trình xây dựng chủ nghĩa xã hội</strong>, do đó chính sách cần vừa bảo đảm quyền tự do, vừa phòng chống lợi dụng tôn giáo để phá hoại khối đại đoàn kết và an ninh quốc gia. <cite>— giáo trình; Luận giải Hiến pháp & chính sách.</cite></p>
 
-    <img src="/images/party-state-policy.png" alt="Hiến pháp và luật tôn giáo" class="lesson-modal__image" />
+    <img src="https://cand.com.vn/Files/Image/chienthang/2016/08/19/5b72f8f9-9844-4318-ab67-dd846f8b78af....jpg" alt="Hiến pháp và luật tôn giáo" class="lesson-modal__image" />
 
     <h3 class="lesson-modal__subtitle">2. Khuôn khổ pháp luật chính</h3>
     <ul class="lesson-modal__list">
@@ -192,7 +282,7 @@ export const religionCourse: Course = {
       <li><strong>Giải pháp phòng ngừa:</strong> phát triển kinh tế — xã hội vùng có đông đồng bào tôn giáo, nâng cao đời sống, giảm "mảnh đất màu mỡ" cho luận điệu chia rẽ.</li>
     </ol>
 
-    <img src="/images/legal-framework.png" alt="Khuôn khổ pháp lý - Luật 2016 và Điều 116" class="lesson-modal__image" />
+    <img src="https://media.vov.vn/sites/default/files/styles/large/public/2022-11/1_168.jpg" alt="Khuôn khổ pháp lý - Luật 2016 và Điều 116" class="lesson-modal__image" />
 
     <h3 class="lesson-modal__subtitle">4. Vai trò của các cơ quan và trách nhiệm thực thi</h3>
     <p>Công tác tôn giáo là trách nhiệm của cả hệ thống chính trị: tổ chức đảng, chính quyền, Mặt trận Tổ quốc, các đoàn thể — phối hợp quản lý, vận động, giải quyết khiếu nại, bảo đảm quyền và xử lý hành vi vi phạm.</p>
@@ -205,84 +295,242 @@ export const religionCourse: Course = {
 
     <blockquote>
       "Nội dung cốt lõi của công tác tôn giáo là công tác vận động quần chúng." 
-      <cite>— Nghị quyết 25-NQ/TW & giáo trình; </cite>
+      <cite>— Nghị quyết 25-NQ/TW  </cite>
     </blockquote>
 
     <h3 class="lesson-modal__subtitle">6. Nguồn & Tài liệu tham khảo (để đối chiếu)</h3>
     <ul class="lesson-modal__list">
-      <li>Giáo trình chương VI: <em>II — Tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội</em>. :contentReference[oaicite:2]{index=2}</li>
-      <li>Báo cáo/ phân tích: <em>Tôn giáo, Chính sách và Âm mưu Lợi dụng</em> (phân tích Luật Tín ngưỡng, tôn giáo 2016; Điều 116 BLHS; công tác vận động quần chúng). :contentReference[oaicite:3]{index=3}</li>
+      <li>Giáo trình chương VI: <em>II — Tôn giáo trong thời kỳ quá độ lên chủ nghĩa xã hội</em>.</li>
+      <li>Báo cáo/ phân tích: <em>Tôn giáo, Chính sách và Âm mưu Lợi dụng</em> (phân tích Luật Tín ngưỡng, tôn giáo 2016; Điều 116 BLHS; công tác vận động quần chúng).</li>
       <li>Văn bản luật tham khảo: Hiến pháp 2013 (Điều 24); Luật Tín ngưỡng, Tôn giáo 2016; Bộ luật Hình sự (Điều 116). </li>
     </ul>
 
     <p class="lesson-modal__note"><strong>Ghi chú dành cho giảng viên:</strong> khi dùng nội dung này, có thể trích trực tiếp Điều 24 Hiến pháp và các đoạn cụ thể của Luật 2016/ Điều 116 để học viên đọc — đồng thời khuyến nghị phân tích trường hợp thực tế (ví dụ: quy trình công nhận tổ chức tôn giáo; một vụ lợi dụng tôn giáo đã bị pháp luật xử lý) để minh họa.</p>
 
-    <!-- Nguồn file: Giáo trình 'II- TÔN GIÁO TRONG THỜI KỲ' (xem nội dung chính sách) :contentReference[oaicite:5]{index=5};
-         Báo cáo 'Tôn giáo, Chính sách và Âm mưu Lợi dụng' (phân tích Luật 2016, Điều 116, NQ 25-NQ/TW).  -->
+    <div class="lesson-modal__video" style="position:relative;padding-top:56.25%;height:0;margin:1rem 0;">
+  <iframe
+    src="https://www.youtube.com/embed/y6hlQ7rlvCE
+"
+    title="Video minh họa: Mô tả ngắn"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
+</div>
   `
-}
-]
+    }
+  ]
 
 };
 
 
 export const courseQuizzes: QuizQuestion[] = [
-    {
-        question: "Theo quan điểm của Đảng, nội dung cốt lõi của công tác tôn giáo là gì?",
-        options: [
-            { text: "Quản lý hành chính chặt chẽ", isCorrect: false },
-            { text: "Công tác vận động quần chúng", isCorrect: true },
-            { text: "Hợp tác quốc tế về tôn giáo", isCorrect: false },
-            { text: "Xây dựng mới các cơ sở thờ tự", isCorrect: false },
-        ],
-        explanation: "Nghị quyết số 25-NQ/TW xác định: 'Nội dung cốt lõi của công tác tôn giáo là công tác vận động quần chúng'."
-    },
-    // Thêm các câu hỏi khác ở đây
+  {
+    question: "Theo quan điểm của Đảng, nội dung cốt lõi của công tác tôn giáo là gì?",
+    options: [
+      { text: "Quản lý hành chính chặt chẽ", isCorrect: false },
+      { text: "Công tác vận động quần chúng", isCorrect: true },
+      { text: "Hợp tác quốc tế về tôn giáo", isCorrect: false },
+      { text: "Xây dựng mới các cơ sở thờ tự", isCorrect: false },
+    ],
+    explanation: "Nghị quyết số 25-NQ/TW xác định: 'Nội dung cốt lõi của công tác tôn giáo là công tác vận động quần chúng'."
+  },
+  // Thêm các câu hỏi khác ở đây
 ];
+export type TimelineEvent = {
+  period: string;
+  title: string;
+  description: string;
+  side: 'left' | 'right';
+  imageUrl?: string;
+};
+
 export const religionTimeline: TimelineEvent[] = [
   {
-    period: 'Thời kỳ Hùng Vương - An Dương Vương',
-    title: 'Nền tảng Tín ngưỡng Bản địa',
-    description: 'Các hình thức tín ngưỡng nguyên thủy như thờ cúng tổ tiên, thờ các vị thần tự nhiên, và thờ Mẫu đã hình thành, đặt nền móng cho đời sống tâm linh người Việt.',
+    period: 'Văn hóa Đông Sơn (khoảng 1000 TCN – thế kỷ 1)',
+    title: 'Tín ngưỡng bản địa — thờ Thần Mặt Trời',
+    description:
+      'Bằng chứng khảo cổ Đông Sơn cho thấy thờ cúng Thần Mặt Trời và các thực hành vật linh gắn với nông nghiệp lúa nước, đặt nền tảng cho đời sống tâm linh người Việt.',
     side: 'right',
-    imageUrl: 'https://placehold.co/400x200/BFDBFE/1E3A8A?text=Tín+ngưỡng+Bản+địa',
+    imageUrl:
+      'https://baotanglichsu.vn/Uploads/images/2020/09/dongson.jpg',
   },
   {
-    period: 'Thế kỷ X - XIV (Nhà Lý - Trần)',
-    title: 'Phật giáo là Quốc giáo',
-    description: 'Du nhập từ đầu Công nguyên, Phật giáo phát triển cực thịnh, trở thành hệ tư tưởng chủ đạo. Vua Trần Nhân Tông sáng lập Thiền phái Trúc Lâm Yên Tử.',
+    period: 'Trước thế kỷ 10',
+    title: 'Hình thành tín ngưỡng thờ Mẫu',
+    description:
+      'Tín ngưỡng thờ Mẫu (Mẫu Trời, Mẫu Đất, Mẫu Nước) phát triển mạnh, đề cao vai trò nữ thần, là trục văn hóa dân gian bền vững của xã hội nông nghiệp Việt Nam.',
     side: 'left',
-    imageUrl: 'https://placehold.co/400x200/FDE68A/B45309?text=Phật+giáo+Trúc+Lâm',
+    imageUrl: 'https://i.ytimg.com/vi/FWIPpfaBXJ8/maxresdefault.jpg',
   },
   {
-    period: 'Thế kỷ XVI - XVII',
-    title: 'Công giáo và Chữ Quốc ngữ',
-    description: 'Các giáo sĩ Dòng Tên như Alexandre de Rhodes đến truyền giáo, góp phần quan trọng vào việc hệ thống hóa và La-tinh hóa tiếng Việt, tạo ra chữ Quốc ngữ.',
+    period: 'Đầu Công nguyên (thế kỷ 1-2)',
+    title: 'Phật giáo du nhập — Trung tâm Luy Lâu',
+    description:
+      'Phật giáo truyền vào sớm qua đường biển từ Ấn Độ; Luy Lâu (Thuận Thành, Bắc Ninh) là một trung tâm Phật giáo quan trọng của Giao Chỉ.',
     side: 'right',
-    imageUrl: 'https://placehold.co/400x200/BFDBFE/1E3A8A?text=Alexandre+de+Rhodes',
+    imageUrl: 'https://langmai.org/uploads/luy-lau.jpg',
   },
   {
-    period: 'Nửa đầu thế kỷ XX',
-    title: 'Sự ra đời các tôn giáo nội sinh',
-    description: 'Gắn liền với bối cảnh xã hội và phong trào giải phóng dân tộc, đạo Cao Đài (1926) và Phật giáo Hòa Hảo (1939) ra đời.',
+    period: 'Thời kỳ Bắc thuộc (từ thế kỷ 1 trở đi)',
+    title: 'Nho giáo và Đạo giáo du nhập',
+    description:
+      'Nho giáo được truyền bá chủ yếu trong bối cảnh Bắc thuộc và dần trở thành công cụ tổ chức hành chính; Đạo giáo nhập vào hệ thống tín ngưỡng dân gian.',
     side: 'left',
-    imageUrl: 'https://placehold.co/400x200/FDE68A/B45309?text=Đạo+Cao+Đài',
+    imageUrl: '',
   },
   {
-    period: 'Ngày 14/6/1955',
+    period: 'Năm 580',
+    title: 'Thiền phái Tỳ Ni Đa Lưu Chi',
+    description:
+      'Thiền sư Vinitaruci (Tỳ-ni-đa-lưu-chi) đến và lập thiền phái đầu tiên tại chùa Pháp Vân — đặt nền móng cho truyền thống thiền Việt.',
+    side: 'right',
+    imageUrl: '',
+  },
+  {
+    period: 'Năm 820',
+    title: 'Thiền phái Vô Ngôn Thông',
+    description:
+      'Thiền sư Vô Ngôn Thông thành lập phái cùng tên tại chùa Kiến Sơ, mang ảnh hưởng Thiền tông Trung Hoa vào Việt Nam.',
+    side: 'left',
+    imageUrl: '',
+  },
+  {
+    period: 'Thế kỷ 10–15 (Nhà Lý - Trần)',
+    title: 'Tam giáo đồng nguyên — Phật giáo là quốc giáo',
+    description:
+      'Sau độc lập, Nho – Đạo – Phật dung hòa; Phật giáo đạt cực thịnh, trở thành hệ tư tưởng chủ đạo trong đời sống triều đình và dân gian.',
+    side: 'right',
+    imageUrl:
+      'https://media.thaythichtructhaiminh.com/files/f1/2020/12/phat-hoang-tran-nhan-tong-so-to-thien-phai-truc-lam-yen-tu_optimized.jpg',
+  },
+  {
+    period: 'Thế kỷ 15',
+    title: 'Tín ngưỡng thờ Mẫu được hệ thống hóa',
+    description:
+      'Từ thế kỷ 15 hình thành hệ thống Mẫu Tam Phủ/Tứ Phủ, nghi lễ hầu đồng và nhân vật Mẫu như Liễu Hạnh được đưa vào thờ tự có tổ chức.',
+    side: 'left',
+    imageUrl: '',
+  },
+  {
+    period: 'Năm 1533',
+    title: 'Công giáo bắt đầu truyền bá',
+    description:
+      'Ghi nhận đầu tiên về truyền giáo Công giáo tại một số làng Bắc Bộ (sự kiện mở đầu cho hiện diện Kitô giáo ở Việt Nam).',
+    side: 'right',
+    imageUrl: 'https://hocviendaminh.com/uploads/cong-giao-1533.jpg',
+  },
+  {
+    period: 'Năm 1651',
+    title: 'Hệ thống hóa chữ Quốc ngữ (Alexandre de Rhodes)',
+    description:
+      'Alexandre de Rhodes xuất bản "Từ điển Việt–Bồ–La" (1651) — bước quan trọng trong quá trình Latinh hóa tiếng Việt, tiền đề cho chữ Quốc ngữ.',
+    side: 'left',
+    imageUrl:
+      'https://thethaovanhoa.vn/Images/2019/12/04/alexandre-derhodes.jpg',
+  },
+  {
+    period: 'Năm 1659',
+    title: 'Thành lập cơ cấu Giáo hội (hai giáo phận đầu tiên)',
+    description:
+      'Tòa Thánh thiết lập hai giáo phận truyền giáo, đánh dấu tổ chức hoá hoạt động Công giáo tại Việt Nam.',
+    side: 'right',
+    imageUrl: '',
+  },
+  {
+    period: 'Năm 1911',
+    title: 'Tin Lành chính thức du nhập',
+    description:
+      'Năm 1911 các truyền giáo viên của Hội C&MA đến Đà Nẵng — mốc chính thức cho sự du nhập của Tin Lành vào VN hiện đại.',
+    side: 'left',
+    imageUrl: '',
+  },
+  {
+    period: 'Năm 1926',
+    title: 'Sự ra đời của Đạo Cao Đài',
+    description:
+      'Tại Tây Ninh, Cao Đài ra đời với tính dung hợp (Phật – Lão – Nho và các yếu tố phương Tây), nhanh chóng thu hút đông tín đồ ở miền Nam.',
+    side: 'right',
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/6/6b/CaoDai_Town_Central_Temple.jpg',
+  },
+  {
+    period: 'Năm 1939',
+    title: 'Phật giáo Hòa Hảo được thành lập',
+    description:
+      'Đức Huỳnh Phú Sổ khai sáng Phật giáo Hòa Hảo (1939) — phong trào Phật giáo thực hành tại gia, lan rộng mạnh ở đồng bằng sông Cửu Long.',
+    side: 'left',
+    imageUrl: 'https://hoahao.org/uploads/duc-huynh-phu-so.jpg',
+  },
+  {
+    period: 'Ngày 14/06/1955',
     title: 'Sắc lệnh 234/SL',
-    description: 'Chủ tịch Hồ Chí Minh ký Sắc lệnh 234/SL, đặt nền tảng pháp lý đầu tiên cho chính sách tôn giáo của Nhà nước Việt Nam Dân chủ Cộng hòa.',
+    description:
+      'Chủ tịch Hồ Chí Minh ký Sắc lệnh 234/SL bảo đảm quyền tự do tín ngưỡng, thờ cúng — nền tảng pháp lý đầu tiên của Nhà nước VNDCCH về tôn giáo.',
     side: 'right',
-    imageUrl: 'https://placehold.co/400x200/BFDBFE/1E3A8A?text=Sắc+lệnh+234/SL',
+    imageUrl:
+      'https://dms.luutru.gov.vn/files/ecm/source_files/2020/06/12/saclenhtudotinnguong-105733-120620-76.png',
+  },
+  {
+    period: 'Từ 1975 – 1980s',
+    title: 'Tái cấu trúc tôn giáo sau thống nhất',
+    description:
+      'Sau 1975, đời sống tôn giáo trải qua tái tổ chức, điều chỉnh pháp chế và quan hệ với nhà nước; dẫn đến các bước hợp tác/điều chỉnh trong quản lý tôn giáo.',
+    side: 'left',
+    imageUrl: '',
+  },
+  {
+    period: 'Năm 1981',
+    title: 'Thống nhất Phật giáo (GHPGVN)',
+    description:
+      'Đại hội tại chùa Quán Sứ (4–7/11/1981) thống nhất các tổ chức, thành lập Giáo hội Phật giáo Việt Nam — tổ chức Phật giáo toàn quốc được nhà nước công nhận.',
+    side: 'right',
+    imageUrl: 'https://giacngo.vn/uploads/2011/quansu.jpg',
+  },
+  {
+    period: 'Năm 19/06/1988',
+    title: 'Tôn phong 117 Thánh Tử đạo Việt Nam',
+    description:
+      'Giáo hoàng Gioan Phaolô II tôn phong 117 vị tử đạo Việt Nam tại Vatican — sự kiện có ý nghĩa lớn đối với cộng đồng Công giáo.',
+    side: 'left',
+    imageUrl: 'https://hdgmvietnam.com/uploads/117-tu-dao.jpg',
+  },
+  {
+    period: 'Ngày 18/06/2004',
+    title: 'Pháp lệnh Tín ngưỡng, Tôn giáo (2004)',
+    description:
+      'Ủy ban Thường vụ Quốc hội ban hành Pháp lệnh 2004 — khung pháp lý chi tiết cho quản lý hoạt động tôn giáo thời Đổi Mới.',
+    side: 'right',
+    imageUrl: '',
+  },
+  {
+    period: '2008, 2014, 2019, (dự kiến 2025)',
+    title: 'Việt Nam đăng cai Đại lễ Vesak Liên Hợp Quốc',
+    description:
+      'Việt Nam đăng cai các kỳ Đại lễ Vesak (2008, 2014, 2019) và được dự kiến lần nữa vào 2025 — dấu hiệu hội nhập Phật giáo quốc tế.',
+    side: 'left',
+    imageUrl: 'https://nhandan.vn/uploads/vesak.jpg',
   },
   {
     period: 'Ngày 18/11/2016',
-    title: 'Luật Tín ngưỡng, Tôn giáo',
-    description: 'Quốc hội thông qua Luật Tín ngưỡng, Tôn giáo (có hiệu lực từ 2018), thể chế hóa toàn diện quan điểm của Đảng và Nhà nước trong thời kỳ đổi mới.',
-    side: 'left',
-    imageUrl: 'https://placehold.co/400x200/FDE68A/B45309?text=Luật+Tín+ngưỡng',
+    title: 'Luật Tín ngưỡng, Tôn giáo (2016)',
+    description:
+      'Quốc hội thông qua Luật Tín ngưỡng, Tôn giáo (có hiệu lực chính thức sau đó) — nâng cấp khung pháp lý, làm rõ khái niệm và quyền/tổ chức tôn giáo.',
+    side: 'right',
+    imageUrl: 'https://www.nxbctqg.org.vn/img_data/images/685607261697_13.jpg',
   },
+  {
+    period: 'Những năm 2020 – Nay',
+    title: 'Xu hướng đương đại và thách thức',
+    description:
+      'Tôn giáo đóng góp nhiều cho công tác xã hội; đồng thời xuất hiện hiện tượng tôn giáo mới, vấn đề quản lý, an ninh tôn giáo và tranh luận quốc tế xung quanh tự do tôn giáo.',
+    side: 'left',
+    imageUrl: '',
+  }
 ];
+
 export const featuredTopics: Topic[] = [
   {
     id: 'religion-analysis',
