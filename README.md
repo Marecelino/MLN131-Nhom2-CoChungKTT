@@ -6,7 +6,7 @@ Dự án này là một ứng dụng web được xây dựng cho môn học **M
 
 ## Thông tin Môn học
 
--   **Môn học**: MLN131 - Những nguyên lý cơ bản của Chủ nghĩa Mác-Lênin
+-   **Môn học**: MLN131 
 -   **Giảng viên hướng dẫn**: Cô Kiều Thị Thu Chung
 -   **Đơn vị thực hiện**: Nhóm 2
 
