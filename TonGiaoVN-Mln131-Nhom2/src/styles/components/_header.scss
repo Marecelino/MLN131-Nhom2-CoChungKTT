@@ -1,0 +1,83 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.app-header {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+  
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+  }
+  
+  &__logo-icon {
+    font-size: 2rem;
+  }
+
+  &__logo-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $text-dark;
+  }
+  
+  &__nav {
+    display: none; // Ẩn trên mobile
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  
+  &__nav-link {
+    font-weight: 600;
+    color: $text-secondary;
+    position: relative;
+    padding-bottom: 4px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $primary-color;
+      transition: width 0.3s ease;
+    }
+    
+    &:hover::after, &.active::after {
+      width: 100%;
+    }
+    
+    &.active {
+      color: $primary-color;
+    }
+  }
+
+  &__cta-button {
+    background-color: $primary-color;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}

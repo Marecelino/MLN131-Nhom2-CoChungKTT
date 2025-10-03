@@ -1,13 +1,11 @@
 @import '../abstracts/variables';
 @import '../base/base';
 @import '../base/typography';
+
 .lesson-modal {
   &__overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
@@ -24,7 +22,8 @@
     max-height: 90vh;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
     animation: scaleUp 0.3s ease;
   }
 
@@ -69,43 +68,82 @@
       color: $primary-color;
       margin-top: 1.5rem;
       margin-bottom: 0.75rem;
-    }
-    
-    .lesson-modal__image {
-        width: 100%;
-        border-radius: 8px;
-        margin: 1rem 0;
+      border-left: 4px solid $primary-color;
+      padding-left: 0.75rem;
     }
 
-    .lesson-modal__list, .lesson-modal__list--ordered {
+    .lesson-modal__image {
+      width: 100%;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .lesson-modal__list,
+    .lesson-modal__list--ordered {
       margin-left: 1.5rem;
       margin-bottom: 1rem;
       li {
         margin-bottom: 0.5rem;
       }
     }
-    
+
+    /* Blockquote highlight */
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1.25rem;
+      border-left: 5px solid #f59e0b;
+      background: #fff7ed;
+      border-radius: 6px;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #92400e;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+      cite {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #ea580c;
+        font-style: normal;
+      }
+    }
+
+    /* Note cards */
     .note-card {
-        background: #fef3c7;
-        border-left: 4px solid #f59e0b;
-        padding: 1rem;
-        border-radius: 4px;
-        margin: 1rem 0;
-        
-        &--danger {
-            background: #fee2e2;
-            border-left-color: #dc2626;
-        }
+      background: #f1f5f9;
+      border-left: 4px solid #3b82f6;
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+
+      strong {
+        color: #1e3a8a;
+      }
+
+      &--danger {
+        background: #fee2e2;
+        border-color: #dc2626;
+        color: #991b1b;
+      }
+
+      &--info {
+        background: #e0f2fe;
+        border-color: #0284c7;
+        color: #075985;
+      }
     }
   }
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes scaleUp {
   from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  to   { transform: scale(1); opacity: 1; }
 }

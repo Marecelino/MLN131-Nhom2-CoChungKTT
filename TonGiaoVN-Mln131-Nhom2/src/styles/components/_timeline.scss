@@ -1,0 +1,118 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: lighten($primary-color, 40%);
+    border-radius: 2px;
+  }
+}
+
+.timeline-item {
+  display: flex;
+  position: relative;
+  width: 50%;
+
+  &--left {
+    align-self: flex-start;
+    justify-content: flex-end;
+    .timeline-card__wrapper {
+      padding-right: 2rem;
+    }
+  }
+
+  &--right {
+    align-self: flex-end;
+    .timeline-card__wrapper {
+      padding-left: 2rem;
+    }
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 1.5rem; // Căn chỉnh với dòng đầu của card
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: white;
+  border: 4px solid $primary-color;
+  border-radius: 50%;
+  z-index: 1;
+
+  .timeline-item--left & {
+    right: -0.625rem;
+  }
+  .timeline-item--right & {
+    left: -0.625rem;
+  }
+}
+
+.timeline-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  border-top: 4px solid;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &--blue {
+    border-color: $primary-color;
+  }
+  &--orange {
+    border-color: #F97316;
+  }
+
+  &__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__period {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    .timeline-card--blue & { color: $primary-color; }
+    .timeline-card--orange & { color: #F97316; }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: $text-dark;
+  }
+
+  &__description {
+    color: $text-light;
+    line-height: 1.6;
+  }
+}

@@ -20,3 +20,18 @@ export interface QuizQuestion {
   options: { text: string; isCorrect: boolean }[];
   explanation: string;
 }
+export interface TimelineEvent {
+  period: string;
+  title: string;
+  description: string;
+  side: 'left' | 'right';
+  imageUrl?: string; 
+}
+export interface Topic {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+  status: 'published' | 'coming_soon';
+}
