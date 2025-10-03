@@ -1,0 +1,36 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.course-detail-page {
+  // Sử dụng class container để căn giữa và giới hạn chiều rộng
+  // Class này đã được định nghĩa trong _base.scss hoặc một file tương tự
+  &.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 $container-padding;
+  }
+}
+
+.course-detail-grid {
+  display: grid;
+  // Mặc định là 1 cột cho thiết bị di động
+  grid-template-columns: 1fr; 
+  gap: 2rem;
+
+  // Khi màn hình đủ lớn (ví dụ: 1024px trở lên), chuyển sang layout 2 cột
+  @media (min-width: 1024px) {
+    // Cột bên trái chiếm 2 phần, cột bên phải chiếm 1 phần
+    grid-template-columns: 2fr 1fr; 
+    gap: 3rem;
+  }
+}
+
+// Khu vực chứa nội dung chính (Lộ trình học, bài quiz...)
+.learning-content {
+  // Không cần style đặc biệt, sẽ được style bởi các component con
+}
+
+// Khu vực chứa sidebar (Thống kê tiến độ)
+.progress-sidebar {
+  // Không cần style đặc biệt, sẽ được style bởi component con
+}

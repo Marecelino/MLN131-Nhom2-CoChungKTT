@@ -1,0 +1,16 @@
+// src/styles/pages/_homePage.scss
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.hero-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__content {
+    // Style cho nội dung bên trái
+  }
+
+  &__image-wrapper {
+    // Style cho khối ảnh bên phải
+  }
+}

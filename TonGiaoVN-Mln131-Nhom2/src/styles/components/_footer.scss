@@ -1,0 +1,59 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.app-footer {
+  background-color: #0f172a; // Một màu nền tối để nổi bật
+  color: #94a3b8; // Màu chữ sáng hơn, dễ đọc
+  padding: 4rem $container-padding 2rem;
+  margin-top: 4rem;
+  border-top: 4px solid $primary-color;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); // Mặc định 1 cột cho mobile
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+
+    // Chuyển sang 3 cột trên màn hình lớn hơn
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #e2e8f0; // Màu tiêu đề sáng hơn
+    margin-bottom: 1rem;
+  }
+
+  &__about p {
+    line-height: 1.6;
+  }
+
+  &__links ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 0.5rem;
+      a {
+        color: #94a3b8;
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__contact p {
+    margin-bottom: 0.5rem;
+  }
+
+  &__copyright {
+    border-top: 1px solid #334155;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.main-layout {
+  // Sử dụng flexbox để tạo layout co dãn
+  display: flex;
+  flex-direction: column;
+  // Đảm bảo layout chiếm ít nhất 100% chiều cao màn hình
+  min-height: 100vh; 
+}
+
+.main-content {
+  // Thuộc tính này sẽ "đẩy" footer xuống dưới cùng
+  // bằng cách lấp đầy tất cả không gian còn trống.
+  flex-grow: 1; 
+
+  // Thêm một chút khoảng trống trên và dưới cho nội dung chính
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}

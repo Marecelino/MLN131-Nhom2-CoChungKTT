@@ -1,0 +1,28 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.learning-path {
+  position: relative;
+  // Padding bên trái để có không gian cho đường kẻ và số thứ tự chương
+  padding-left: 4rem; 
+
+  &__title {
+    // Tái sử dụng style từ file typography
+    @extend .section-title; 
+    // Ghi đè lại để căn lề trái thay vì căn giữa
+    text-align: left; 
+    margin-bottom: 3rem;
+  }
+
+  // Đây là phần tạo ra đường kẻ dọc màu xám
+  &::before {
+    content: '';
+    position: absolute;
+    left: 1.5rem; // Căn chỉnh đường kẻ
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: $border-color; // Sử dụng biến màu xám
+    border-radius: 2px;
+  }
+}

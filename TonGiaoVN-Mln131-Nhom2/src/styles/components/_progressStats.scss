@@ -1,0 +1,43 @@
+@import '../abstracts/variables';
+@import '../base/base';
+@import '../base/typography';
+.progress-stats {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  position: sticky;
+  top: 100px; // Dưới header
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  &__summary {
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  &__details {
+    margin-top: 2rem;
+    text-align: left;
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid $border-color;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+
+      span:last-child {
+        font-weight: 600;
+        color: $text-light;
+      }
+    }
+  }
+}
