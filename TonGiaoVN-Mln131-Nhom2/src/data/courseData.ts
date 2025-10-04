@@ -357,7 +357,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Tín ngưỡng thờ Mẫu (Mẫu Trời, Mẫu Đất, Mẫu Nước) phát triển mạnh, đề cao vai trò nữ thần, là trục văn hóa dân gian bền vững của xã hội nông nghiệp Việt Nam.',
     side: 'left',
-    imageUrl: 'https://daomautuphu.vn/wp-content/uploads/2022/08/Mau_Cuu_Trung_Thien_tranh_1.webp',
+    imageUrl: 'https://tse1.mm.bing.net/th/id/OIP.N0_653BI3sbhQoFe-iLnoQHaKa?cb=12&pid=ImgDet&w=192&h=269&c=7&dpr=1.7&o=7&rm=3',
   },
   {
     period: 'thế kỷ thứ II sau Công nguyên',
@@ -399,7 +399,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Ghi nhận đầu tiên về truyền giáo Công giáo tại một số làng Bắc Bộ (sự kiện mở đầu cho hiện diện Kitô giáo ở Việt Nam).',
     side: 'right',
-    imageUrl: 'https://hocviendaminh.com/uploads/cong-giao-1533.jpg',
+    imageUrl: 'https://hocviendaminh.com/storage/image/2024/11/1-1731893197.jpg',
   },
   {
     period: 'Năm 1651',
@@ -408,7 +408,7 @@ export const religionTimeline: TimelineEvent[] = [
       'Alexandre de Rhodes xuất bản "Từ điển Việt–Bồ–La" (1651) — bước quan trọng trong quá trình Latinh hóa tiếng Việt, tiền đề cho chữ Quốc ngữ.',
     side: 'left',
     imageUrl:
-      'https://thethaovanhoa.vn/Images/2019/12/04/alexandre-derhodes.jpg',
+      'https://tse4.mm.bing.net/th/id/OIP.1xW_-l4FVrzNR0FzZmhSBwHaD_?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3',
   },
   {
     period: 'Năm 1659',
@@ -416,7 +416,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Tòa Thánh thiết lập hai giáo phận truyền giáo, đánh dấu tổ chức hoá hoạt động Công giáo tại Việt Nam.',
     side: 'right',
-    imageUrl: '',
+    imageUrl: 'https://tgpsaigon.net/Images/Articles/LargeImages/08092024_164354.jpg',
   },
   {
     period: 'Năm 1911',
@@ -424,7 +424,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Năm 1911 các truyền giáo viên của Hội C&MA đến Đà Nẵng — mốc chính thức cho sự du nhập của Tin Lành vào VN hiện đại.',
     side: 'left',
-    imageUrl: '',
+    imageUrl: 'https://httlvn.org/wp-content/uploads/2022/01/03-Da-nang-1924-1068x698.jpg',
   },
   {
     period: 'Năm 1926',
@@ -433,7 +433,7 @@ export const religionTimeline: TimelineEvent[] = [
       'Tại Tây Ninh, Cao Đài ra đời với tính dung hợp (Phật – Lão – Nho và các yếu tố phương Tây), nhanh chóng thu hút đông tín đồ ở miền Nam.',
     side: 'right',
     imageUrl:
-      'https://upload.wikimedia.org/wikipedia/commons/6/6b/CaoDai_Town_Central_Temple.jpg',
+      'https://nld.mediacdn.vn/291774122806476800/2023/9/28/cung-thoi-tai-bao-an-tu-1-1695865745310469794125.jpg',
   },
   {
     period: 'Năm 1939',
@@ -441,7 +441,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Đức Huỳnh Phú Sổ khai sáng Phật giáo Hòa Hảo (1939) — phong trào Phật giáo thực hành tại gia, lan rộng mạnh ở đồng bằng sông Cửu Long.',
     side: 'left',
-    imageUrl: 'https://hoahao.org/uploads/duc-huynh-phu-so.jpg',
+    imageUrl: 'https://tse2.mm.bing.net/th/id/OIP.wE9nb4RaHi09igvbSZbjUAAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3',
   },
   {
     period: 'Ngày 14/06/1955',
@@ -458,7 +458,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Sau 1975, đời sống tôn giáo trải qua tái tổ chức, điều chỉnh pháp chế và quan hệ với nhà nước; dẫn đến các bước hợp tác/điều chỉnh trong quản lý tôn giáo.',
     side: 'left',
-    imageUrl: '',
+    imageUrl: 'https://i.ytimg.com/vi/HG2HGAxN8Y0/maxresdefault.jpg',
   },
   {
     period: 'Năm 1981',
@@ -466,7 +466,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Đại hội tại chùa Quán Sứ (4–7/11/1981) thống nhất các tổ chức, thành lập Giáo hội Phật giáo Việt Nam — tổ chức Phật giáo toàn quốc được nhà nước công nhận.',
     side: 'right',
-    imageUrl: 'https://giacngo.vn/uploads/2011/quansu.jpg',
+    imageUrl: 'https://i.ex-cdn.com/phatgiao.org.vn/files/f1/Contents/anhminh/20171117/Quan-Su-ngoi-chua-ghi-dau-cac-ky-dai-hoi.jpg',
   },
   {
     period: 'Năm 19/06/1988',
@@ -474,7 +474,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Giáo hoàng Gioan Phaolô II tôn phong 117 vị tử đạo Việt Nam tại Vatican — sự kiện có ý nghĩa lớn đối với cộng đồng Công giáo.',
     side: 'left',
-    imageUrl: 'https://hdgmvietnam.com/uploads/117-tu-dao.jpg',
+    imageUrl: 'https://images.hdgmvietnam.com/images/Image/Picture/Video/CacThanhTuDao-VietNam.jpg',
   },
   {
     period: 'Ngày 18/06/2004',
@@ -482,15 +482,15 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Ủy ban Thường vụ Quốc hội ban hành Pháp lệnh 2004 — khung pháp lý chi tiết cho quản lý hoạt động tôn giáo thời Đổi Mới.',
     side: 'right',
-    imageUrl: '',
+    imageUrl: 'https://cms.btgcp.gov.vn/upload/post/05_03_2024/giai-phap-nang-cao-hieu-qua-thuc-hien-phap-luat-ve-ton-giao-o-nuoc-ta-hien-nay-eed842b0bb46eee492f2395f874f58d1.jpg',
   },
   {
-    period: '2008, 2014, 2019, (dự kiến 2025)',
+    period: '2008, 2014, 2019,  2025',
     title: 'Việt Nam đăng cai Đại lễ Vesak Liên Hợp Quốc',
     description:
       'Việt Nam đăng cai các kỳ Đại lễ Vesak (2008, 2014, 2019) và được dự kiến lần nữa vào 2025 — dấu hiệu hội nhập Phật giáo quốc tế.',
     side: 'left',
-    imageUrl: 'https://nhandan.vn/uploads/vesak.jpg',
+    imageUrl: 'https://angiang.gov.vn/sites/default/files/inline-images/vesaklhq.jpg',
   },
   {
     period: 'Ngày 18/11/2016',
@@ -498,7 +498,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Quốc hội thông qua Luật Tín ngưỡng, Tôn giáo (có hiệu lực chính thức sau đó) — nâng cấp khung pháp lý, làm rõ khái niệm và quyền/tổ chức tôn giáo.',
     side: 'right',
-    imageUrl: 'https://www.nxbctqg.org.vn/img_data/images/685607261697_13.jpg',
+    imageUrl: 'https://www.nxbctqg.org.vn/img_data/images/images/nhung%20noi%20dung20102017.jpg',
   },
   {
     period: 'Những năm 2020 – Nay',
@@ -506,7 +506,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Tôn giáo đóng góp nhiều cho công tác xã hội; đồng thời xuất hiện hiện tượng tôn giáo mới, vấn đề quản lý, an ninh tôn giáo và tranh luận quốc tế xung quanh tự do tôn giáo.',
     side: 'left',
-    imageUrl: '',
+    imageUrl: 'https://tapchicongsan.org.vn/image/journal/article?img_id=40098096&t=1588859285874',
   }
 ];
 
@@ -514,8 +514,8 @@ export const featuredTopics: Topic[] = [
   {
     id: 'religion-analysis',
     title: 'Tôn giáo ở Việt Nam: Đặc điểm, Chính sách & Thách thức',
-    description: 'Phân tích chuyên sâu về bức tranh tôn giáo đa dạng, chính sách nhất quán của Đảng và các âm mưu lợi dụng tôn giáo để chống phá nhà nước.',
-    imageUrl: 'https://placehold.co/600x400/3B82F6/FFFFFF?text=Phân+tích+Tôn+giáo',
+    description: 'Phân tích chuyên sâu về bức tranh tôn giáo đa dạng, chính sách nhất quán của Đảng và các âm mưu lợi dụng tôn giáo để chống phá nhà nước. Ảnh : Chủ tịch Hồ Chí Minh nói chuyện thân mật với các đại biểu tôn giáo trong Quốc hội nước Việt Nam Dân chủ Cộng hòa năm 1960 (Trung tâm Lưu trữ Quốc gia III, Tài liệu ảnh giai đoạn (1954 - 1985) (LIV), SLT 1474). ',
+    imageUrl: 'https://static-images.vnncdn.net/vps_images_publish/000001/000003/2025/7/31/bho-voi-ton-giao-595.jpg?width=0&s=jsAdgCK9qu9NMiF_wZvzQQ',
     link: `/course/${religionCourse.id}`, // Link đến khóa học đã có
     status: 'published',
   },
@@ -523,7 +523,7 @@ export const featuredTopics: Topic[] = [
     id: 'party-history',
     title: 'Lịch sử Đảng Cộng sản Việt Nam',
     description: 'Dòng thời gian các sự kiện trọng đại, phân tích vai trò lãnh đạo của Đảng qua các thời kỳ lịch sử và những bài học kinh nghiệm.',
-    imageUrl: 'https://placehold.co/600x400/6B7280/FFFFFF?text=Lịch+sử+Đảng',
+    imageUrl: 'https://cdn.luatminhkhue.vn/lmk/articles/98/492281/lich-su-hinh-thanh-va-phat-trien-cua-dang-cong-san-viet-nam-492281.jpg',
     link: '#',
     status: 'coming_soon',
   },
@@ -531,7 +531,7 @@ export const featuredTopics: Topic[] = [
     id: 'political-economy',
     title: 'Kinh tế Chính trị Mác - Lênin',
     description: 'Các quy luật kinh tế cơ bản, phân tích nền kinh tế thị trường định hướng xã hội chủ nghĩa tại Việt Nam và các xu hướng toàn cầu.',
-    imageUrl: 'https://placehold.co/600x400/6B7280/FFFFFF?text=Kinh+tế+Chính+trị',
+    imageUrl: 'https://tse3.mm.bing.net/th/id/OIP.iYh02jBbYNh42n5CughUQwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3',
     link: '#',
     status: 'coming_soon',
   },

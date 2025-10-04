@@ -9,7 +9,11 @@ const Header: React.FC = () => {
       <div className="app-header__inner container">
         <Link to="/" className="app-header__logo-wrapper">
 <div className="app-header__logo-icon">
-
+  <img 
+    src="https://yt3.googleusercontent.com/ytc/AIdro_l5RDb_hCP3D-oDGK4Rw4cnqYhDxXC8hg-U8CrjkFuwM7w=s900-c-k-c0x00ffffff-no-rj" 
+    alt="logo"
+    style={{ width: "32px", height: "32px", objectFit: "cover", borderRadius: "50%" }}
+  />
 </div>
           <div>
             <h1 className="app-header__logo-title">MLN131 - GROUP2</h1>
