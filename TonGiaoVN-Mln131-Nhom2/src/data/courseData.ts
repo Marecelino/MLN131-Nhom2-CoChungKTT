@@ -1,4 +1,4 @@
-import type { Course, QuizQuestion, Topic, TimelineEvent } from '../types';
+import type { Course, QuizQuestion, Topic, Person,  TimelineEvent } from '../types';
 
 
 
@@ -339,13 +339,7 @@ export const courseQuizzes: QuizQuestion[] = [
   },
   // Thêm các câu hỏi khác ở đây
 ];
-export type TimelineEvent = {
-  period: string;
-  title: string;
-  description: string;
-  side: 'left' | 'right';
-  imageUrl?: string;
-};
+
 
 export const religionTimeline: TimelineEvent[] = [
   {
@@ -355,7 +349,7 @@ export const religionTimeline: TimelineEvent[] = [
       'Bằng chứng khảo cổ Đông Sơn cho thấy thờ cúng Thần Mặt Trời và các thực hành vật linh gắn với nông nghiệp lúa nước, đặt nền tảng cho đời sống tâm linh người Việt.',
     side: 'right',
     imageUrl:
-      'https://baotanglichsu.vn/Uploads/images/2020/09/dongson.jpg',
+      'https://baotanglichsu.vn/DataFiles/2024/09/News/Tieng%20Viet/16.9.2024/Tao%20sang%20thoi%20Dong%20Son%20ky%201/2.png',
   },
   {
     period: 'Trước thế kỷ 10',
@@ -363,15 +357,15 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Tín ngưỡng thờ Mẫu (Mẫu Trời, Mẫu Đất, Mẫu Nước) phát triển mạnh, đề cao vai trò nữ thần, là trục văn hóa dân gian bền vững của xã hội nông nghiệp Việt Nam.',
     side: 'left',
-    imageUrl: 'https://i.ytimg.com/vi/FWIPpfaBXJ8/maxresdefault.jpg',
+    imageUrl: 'https://daomautuphu.vn/wp-content/uploads/2022/08/Mau_Cuu_Trung_Thien_tranh_1.webp',
   },
   {
-    period: 'Đầu Công nguyên (thế kỷ 1-2)',
+    period: 'thế kỷ thứ II sau Công nguyên',
     title: 'Phật giáo du nhập — Trung tâm Luy Lâu',
     description:
       'Phật giáo truyền vào sớm qua đường biển từ Ấn Độ; Luy Lâu (Thuận Thành, Bắc Ninh) là một trung tâm Phật giáo quan trọng của Giao Chỉ.',
     side: 'right',
-    imageUrl: 'https://langmai.org/uploads/luy-lau.jpg',
+    imageUrl: 'https://i.ex-cdn.com/phatgiao.org.vn/files/content/2021/05/26/ai-la-nguoi-dep-nhat-1-1652.jpg',
   },
   {
     period: 'Thời kỳ Bắc thuộc (từ thế kỷ 1 trở đi)',
@@ -379,24 +373,9 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Nho giáo được truyền bá chủ yếu trong bối cảnh Bắc thuộc và dần trở thành công cụ tổ chức hành chính; Đạo giáo nhập vào hệ thống tín ngưỡng dân gian.',
     side: 'left',
-    imageUrl: '',
+    imageUrl: 'https://th.bing.com/th/id/R.c2f3a56eb45e0d10575134bdfabd748b?rik=Pemo6HwPzRdCiQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-d3Stdp00sM0%2fVWXbDVuSBAI%2fAAAAAAAAF5M%2ftOa-HpelIVQ%2fs1600%2fheader.png&ehk=nPW1OV7%2bizLi%2bPvXnC6bRXU6%2bi8rYyq5KvsFjL3MtSI%3d&risl=&pid=ImgRaw&r=0',
   },
-  {
-    period: 'Năm 580',
-    title: 'Thiền phái Tỳ Ni Đa Lưu Chi',
-    description:
-      'Thiền sư Vinitaruci (Tỳ-ni-đa-lưu-chi) đến và lập thiền phái đầu tiên tại chùa Pháp Vân — đặt nền móng cho truyền thống thiền Việt.',
-    side: 'right',
-    imageUrl: '',
-  },
-  {
-    period: 'Năm 820',
-    title: 'Thiền phái Vô Ngôn Thông',
-    description:
-      'Thiền sư Vô Ngôn Thông thành lập phái cùng tên tại chùa Kiến Sơ, mang ảnh hưởng Thiền tông Trung Hoa vào Việt Nam.',
-    side: 'left',
-    imageUrl: '',
-  },
+  
   {
     period: 'Thế kỷ 10–15 (Nhà Lý - Trần)',
     title: 'Tam giáo đồng nguyên — Phật giáo là quốc giáo',
@@ -412,7 +391,7 @@ export const religionTimeline: TimelineEvent[] = [
     description:
       'Từ thế kỷ 15 hình thành hệ thống Mẫu Tam Phủ/Tứ Phủ, nghi lễ hầu đồng và nhân vật Mẫu như Liễu Hạnh được đưa vào thờ tự có tổ chức.',
     side: 'left',
-    imageUrl: '',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Tu_vi%E1%BB%87n_V%C4%A9nh_Nghi%C3%AAm%2C_trong_Ph%E1%BA%ADt_%C4%91i%E1%BB%87n_%28Ban_th%E1%BB%9D_Tam_th%C3%A1nh_m%E1%BA%ABu%29_%285%29.jpg/800px-Tu_vi%E1%BB%87n_V%C4%A9nh_Nghi%C3%AAm%2C_trong_Ph%E1%BA%ADt_%C4%91i%E1%BB%87n_%28Ban_th%E1%BB%9D_Tam_th%C3%A1nh_m%E1%BA%ABu%29_%285%29.jpg',
   },
   {
     period: 'Năm 1533',
@@ -556,4 +535,240 @@ export const featuredTopics: Topic[] = [
     link: '#',
     status: 'coming_soon',
   },
+];
+
+// Dữ liệu trích xuất từ file của bạn: :contentReference[oaicite:0]{index=0}
+export const persons: Person[] = [
+  {
+    id: 'p1',
+    name: 'Khuông Việt (Ngô Chân Lưu)',
+    religion: 'Phật giáo (Vô Ngôn Thông)',
+    period: 'Đinh - Tiền Lê (Thế kỷ X)',
+    birthDeath: '933–1011',
+    bio: 'Thiền sư Ngô Chân Lưu (Khuông Việt) — Tăng thống khai quốc; cao tăng kiêm cố vấn triều đình, đóng vai trò ngoại giao quan trọng với nhà Tống.',
+    contributions: [
+      'Thiết lập chức Tăng thống, thể chế hóa vai trò Phật giáo trong triều đình',
+      'Cố vấn triều chính, tham gia tổ chức bộ máy nhà nước',
+      'Tham gia ngoại giao, góp phần bảo vệ độc lập trước nhà Tống'
+    ],
+    imageUrl: '/images/ngo-chan-luu.jpg',
+    gallery: [],
+    tags: ['tôn giáo','ngoại giao','chính trị']
+  },
+  {
+    id: 'p2',
+    name: 'Vạn Hạnh',
+    religion: 'Phật giáo',
+    period: 'Tiền Lê - Lý (Thế kỷ X–XI)',
+    birthDeath: 'c. 937–1018/1025',
+    bio: 'Quốc sư Vạn Hạnh — thiền sư có ảnh hưởng lớn, người dìu dắt Lý Công Uẩn, tham gia chuyển giao quyền lực và thuyết phục dời đô về Thăng Long.',
+    contributions: [
+      'Đạo diễn cuộc chuyển giao quyền lực (tạo nền tảng cho nhà Lý)',
+      'Cố vấn cho việc dời đô về Thăng Long',
+      'Định hướng chính trị và tư tưởng cho vương triều mới'
+    ],
+    imageUrl: '/images/van-hanh.jpg',
+    gallery: [],
+    tags: ['chính trị','đổi đô','tư tưởng']
+  },
+  {
+    id: 'p3',
+    name: 'Trần Nhân Tông (Trần Khâm)',
+    religion: 'Phật giáo (Sáng lập Thiền phái Trúc Lâm)',
+    period: 'Nhà Trần (Thế kỷ XIII–XIV)',
+    birthDeath: '1258–1308',
+    bio: 'Vua Trần, Phật hoàng — lãnh đạo tinh thần và quân sự trong hai cuộc kháng chiến chống Nguyên-Mông; sau nhường ngôi xuất gia, sáng lập Thiền phái Trúc Lâm, hòa hợp đạo & đời.',
+    contributions: [
+      'Lãnh đạo kháng chiến chống Nguyên-Mông (1285, 1288)',
+      'Sáng lập và thống nhất Thiền phái Trúc Lâm (thiền thuần Việt)',
+      'Thực thi chính sách hòa giải, phục hồi kinh tế và củng cố khối đại đoàn kết'
+    ],
+    imageUrl: '/images/tran-nhan-tong.jpg',
+    gallery: ['/images/tran-1.jpg','/images/tran-2.jpg'],
+    tags: ['quốc gia','văn hóa','lãnh đạo']
+  },
+  {
+    id: 'p4',
+    name: 'Đoàn Minh Huyên (Phật Thầy Tây An)',
+    religion: 'Bửu Sơn Kỳ Hương',
+    period: 'Nguyễn (Thế kỷ XIX)',
+    birthDeath: '1807–1856',
+    bio: 'Phật Thầy Tây An — người sáng lập Bửu Sơn Kỳ Hương; chữa bệnh, tổ chức tín đồ khai hoang và lập các trung tâm dinh điền ở Nam Bộ.',
+    contributions: [
+      'Sáng lập đạo Bửu Sơn Kỳ Hương',
+      'Tổ chức tín đồ khai hoang, lập 4 trung tâm dinh điền lớn, mở mang bờ cõi Nam Bộ',
+      'Xây dựng các trại ruộng/căn cứ dân sinh có giá trị cho kháng chiến sau này'
+    ],
+    imageUrl: '/images/doan-minh-huyen.jpg',
+    gallery: [],
+    tags: ['khai hoang','Nam Bộ','xã hội']
+  },
+  {
+    id: 'p5',
+    name: 'Nguyễn Trường Tộ',
+    religion: 'Công giáo',
+    period: 'Nguyễn (Thế kỷ XIX)',
+    birthDeath: '1830–1871',
+    bio: 'Nhà trí thức Công giáo — tác giả nhiều bản điều trần kêu gọi cải cách (giáo dục, kinh tế, quân sự) nhằm canh tân đất nước trước hiểm họa thực dân.',
+    contributions: [
+      'Soạn hàng loạt điều trần đề xuất cải cách toàn diện (giáo dục, quân sự, kinh tế, ngoại giao)',
+      'Thúc đẩy phổ cập kiến thức thực tiễn và dùng chữ Quốc ngữ để mở rộng dân trí',
+      'Đại diện cho khuynh hướng tiếp nhận khoa học - kỹ thuật phương Tây nhằm tự cường'
+    ],
+    imageUrl: '/images/nguyen-truong-to.jpg',
+    gallery: [],
+    tags: ['cải cách','giáo dục','hội nhập']
+  },
+  {
+    id: 'p6',
+    name: 'Huỳnh Phú Sổ',
+    religion: 'Phật giáo Hòa Hảo',
+    period: 'Cận đại (Thế kỷ XX)',
+    birthDeath: '1920–1947',
+    bio: 'Người sáng lập Phật giáo Hòa Hảo — phát triển phong trào tu tại gia ở miền Tây, nhấn mạnh Tứ Ân (trong đó có Ân Đất Nước) và khơi dậy tinh thần yêu nước trong quần chúng.',
+    contributions: [
+      'Thành lập Phật giáo Hòa Hảo và phổ biến giáo lý giản dị, gắn với đời sống nông dân',
+      'Khơi dậy tinh thần yêu nước và tổ chức quần chúng tham gia các phong trào kháng chiến',
+      'Đóng góp cho an sinh và tổ chức cộng đồng nông thôn'
+    ],
+    imageUrl: '/images/huynh-phu-so.jpg',
+    gallery: [],
+    tags: ['nông thôn','phong trào','kháng chiến']
+  },
+  {
+    id: 'p7',
+    name: 'Trung đội Phật tử chùa Cổ Lễ',
+    religion: 'Phật giáo',
+    period: 'Kháng chiến chống Pháp (1947)',
+    birthDeath: '',
+    bio: 'Ngày 27/2/1947 tại chùa Cổ Lễ (Nam Định), 27 nhà sư đã phát nguyện “cởi áo cà sa, khoác chiến bào”, thành lập Trung đội Phật tử Vệ quốc đoàn. Đây là biểu tượng của tinh thần nhập thế, yêu nước và sẵn sàng hy sinh vì Tổ quốc.',
+    contributions: [
+      'Thành lập Trung đội Phật tử tại chùa Cổ Lễ năm 1947',
+      'Tham gia chiến đấu bảo vệ Tổ quốc trong kháng chiến chống Pháp',
+      'Khơi dậy phong trào yêu nước trong giới Phật giáo với tinh thần "đạo pháp gắn liền dân tộc"'
+    ],
+    imageUrl: '/images/chua-co-le.jpg',
+    gallery: ['/images/co-le-1.jpg','/images/co-le-2.jpg'],
+    coords: [{ lat: 20.3229, lng: 106.1977 }],
+    tags: ['kháng chiến','phật giáo','yêu nước']
+  },
+  {
+    id: 'p8',
+    name: 'Đại tá Đinh Thế Hinh (Thích Pháp Lữ)',
+    religion: 'Phật giáo',
+    period: 'Kháng chiến chống Pháp - hiện đại',
+    birthDeath: '',
+    bio: 'Nhà sư Thích Pháp Lữ (thế danh Đinh Thế Hinh) là một trong 27 tăng sĩ chùa Cổ Lễ “cởi áo cà sa, khoác chiến bào”. Ông đã cống hiến trọn đời cho quân đội và được phong quân hàm Đại tá Quân đội nhân dân Việt Nam.',
+    contributions: [
+      'Tham gia Trung đội Phật tử năm 1947',
+      'Trực tiếp chiến đấu trong kháng chiến chống Pháp và chống Mỹ',
+      'Gắn bó trọn đời với quân đội, tiêu biểu cho tinh thần “từ bi và dũng cảm”'
+    ],
+    imageUrl: '/images/thich-phap-lu.jpg',
+    gallery: [],
+    coords: [{ lat: 20.3229, lng: 106.1977 }],
+    tags: ['phật giáo','quân đội','anh hùng']
+  },
+  {
+    id: 'p9',
+    name: 'Thượng tọa Thích Tâm Vượng',
+    religion: 'Phật giáo',
+    period: 'Hiện đại (Thế kỷ XXI)',
+    birthDeath: '',
+    bio: 'Thượng tọa Thích Tâm Vượng, Viện chủ chùa Cổ Lễ (Nam Định), từng tham gia chiến đấu bảo vệ Tổ quốc trước khi trở lại đời sống tu hành. Ông kế tục và phát huy tinh thần yêu nước của các bậc tiền bối trong thời bình.',
+    contributions: [
+      'Tham gia chiến đấu bảo vệ Tổ quốc',
+      'Kế thừa và phát huy truyền thống yêu nước của Phật giáo chùa Cổ Lễ',
+      'Đóng góp cho công tác hoằng pháp và xây dựng đoàn kết tôn giáo'
+    ],
+    imageUrl: '/images/thich-tam-vuong.jpg',
+    gallery: [],
+    coords: [{ lat: 20.3229, lng: 106.1977 }],
+    tags: ['phật giáo','truyền thống','xây dựng đất nước']
+  },
+  {
+    id: 'p10',
+    name: 'Hòa thượng Thích Bảo Nghiêm',
+    religion: 'Phật giáo',
+    period: 'Quốc hội khóa XV (2021–2026)',
+    birthDeath: '',
+    bio: 'Phó Chủ tịch Hội đồng Trị sự kiêm Trưởng Ban Hoằng pháp Trung ương GHPGVN, Đại biểu Quốc hội nhiều khóa, đại diện tiếng nói của Phật giáo tại nghị trường.',
+    contributions: [
+      'Đại biểu Quốc hội các khóa XIII, XIV, XV',
+      'Đóng góp cho công tác hoằng pháp và xây dựng chính sách tôn giáo',
+      'Góp phần xây dựng khối đại đoàn kết toàn dân tộc'
+    ],
+    imageUrl: '/images/thich-bao-nghiem.jpg',
+    gallery: [],
+    coords: [{ lat: 21.0278, lng: 105.8342 }],
+    tags: ['phật giáo','quốc hội','đại đoàn kết']
+  },
+  {
+    id: 'p11',
+    name: 'Hòa thượng Thích Thanh Quyết',
+    religion: 'Phật giáo',
+    period: 'Quốc hội khóa XV (2021–2026)',
+    birthDeath: '',
+    bio: 'Phó Chủ tịch Hội đồng Trị sự Trung ương, Trưởng Ban Trị sự GHPGVN tỉnh Quảng Ninh, đại biểu Quốc hội nhiều khóa, đóng góp cho công tác dân vận và phát triển vùng Phật giáo Quảng Ninh.',
+    contributions: [
+      'Đại biểu Quốc hội các khóa XIII, XIV, XV',
+      'Phát triển Phật giáo tại vùng Đông Bắc',
+      'Tham gia xây dựng chính sách pháp luật liên quan đến tôn giáo'
+    ],
+    imageUrl: '/images/thich-thanh-quyet.jpg',
+    gallery: [],
+    coords: [{ lat: 20.9500, lng: 107.0833 }],
+    tags: ['phật giáo','chính sách','đại đoàn kết']
+  },
+  {
+    id: 'p12',
+    name: 'Thượng tọa Thích Đức Thiện',
+    religion: 'Phật giáo',
+    period: 'Quốc hội khóa XV (2021–2026)',
+    birthDeath: '',
+    bio: 'Phó Chủ tịch kiêm Tổng Thư ký Hội đồng Trị sự GHPGVN, đại biểu Quốc hội khóa XV (tỉnh Điện Biên), đại diện thế hệ tăng sĩ trẻ có học vấn và năng lực quản lý.',
+    contributions: [
+      'Đóng góp vào công tác điều hành và cải tiến tổ chức GHPGVN',
+      'Thúc đẩy các hoạt động giao lưu tôn giáo quốc tế',
+      'Đại diện Phật giáo tham gia xây dựng luật và chính sách quốc gia'
+    ],
+    imageUrl: '/images/thich-duc-thien.jpg',
+    gallery: [],
+    coords: [{ lat: 21.3833, lng: 103.0167 }],
+    tags: ['phật giáo','lãnh đạo trẻ','chính sách']
+  },
+  {
+    id: 'p13',
+    name: 'Thượng tọa Lý Minh Đức',
+    religion: 'Phật giáo Nam tông Khmer',
+    period: 'Quốc hội khóa XV (2021–2026)',
+    birthDeath: '',
+    bio: 'Phó Trưởng Ban Trị sự GHPGVN tỉnh Sóc Trăng, đại biểu Quốc hội khóa XIV–XV, đại diện cộng đồng Phật giáo Nam tông Khmer, góp phần củng cố đoàn kết dân tộc và tôn giáo vùng Tây Nam Bộ.',
+    contributions: [
+      'Đại biểu Quốc hội khóa XIV–XV',
+      'Đóng góp phát triển vùng Khmer Nam Bộ',
+      'Tăng cường đoàn kết tôn giáo và dân tộc'
+    ],
+    imageUrl: '/images/ly-minh-duc.jpg',
+    gallery: [],
+    coords: [{ lat: 9.6034, lng: 105.9739 }],
+    tags: ['khmer','phật giáo','đoàn kết']
+  },
+  {
+    id: 'p14',
+    name: 'Linh mục Nguyễn Văn Riễn',
+    religion: 'Công giáo',
+    period: 'Quốc hội khóa XV (2021–2026)',
+    birthDeath: '',
+    bio: 'Chánh xứ Giáo xứ Thánh Giuse (Phú Cường), Phó Chủ tịch kiêm Tổng Thư ký Ủy ban Đoàn kết Công giáo Việt Nam, đại biểu Quốc hội khóa XIV–XV, đóng góp tích cực cho đoàn kết tôn giáo và công tác xã hội.',
+    contributions: [
+      'Đại biểu Quốc hội khóa XIV–XV',
+      'Lãnh đạo Ủy ban Đoàn kết Công giáo Việt Nam',
+      'Thúc đẩy tinh thần “Sống tốt đời đẹp đạo” trong cộng đồng Công giáo'
+    ],
+    imageUrl: '/images/nguyen-van-rien.jpg',
+    gallery: [],
+    coords: [{ lat: 11.3254, lng: 106.4770 }],
+    tags: ['công giáo','đại đoàn kết','xã hội']
+  }
 ];

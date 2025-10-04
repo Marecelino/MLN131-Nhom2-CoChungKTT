@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { type  Topic } from '../../types';
-
+import '../../styles/components/_topicCard.scss'
 interface TopicCardProps {
   topic: Topic;
 }

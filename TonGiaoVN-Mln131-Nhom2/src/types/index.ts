@@ -27,6 +27,7 @@ export interface TimelineEvent {
   side: 'left' | 'right';
   imageUrl?: string; 
 }
+
 export interface Topic {
   id: string;
   title: string;
@@ -34,4 +35,17 @@ export interface Topic {
   imageUrl: string;
   link: string;
   status: 'published' | 'coming_soon';
+}
+export interface Person {
+  id: string;
+  name: string;
+  religion?: string;
+  period?: string;
+  birthDeath?: string;
+  bio?: string;
+  contributions?: string[];
+  imageUrl?: string;
+  gallery?: string[];
+  coords?: { lat: number; lng: number }[];
+  tags?: string[];
 }
