@@ -328,6 +328,18 @@ Do đó, nhiệm vụ hàng đầu của sinh viên là phải trang bị cho m�
 
 export const courseQuizzes: QuizQuestion[] = [
   {
+  question: "Cần làm gì để tránh bị lôi kéo, dắt mũi bởi các âm mưu và thủ đoạn lợi dụng tôn giáo?",
+  options: [
+    { text: "Nâng cao trình độ học vấn và nhận thức cho người dân, đặc biệt ở vùng sâu, vùng xa, vùng đồng bào dân tộc thiểu số.", isCorrect: false },
+    { text: "Tuyên truyền, phổ biến sâu rộng cho người dân về chính sách tôn giáo của Nhà nước và các âm mưu, thủ đoạn của kẻ xấu.", isCorrect: false },
+    { text: "Rèn luyện tư duy phản biện và kỹ năng kiểm chứng thông tin.", isCorrect: false },
+    { text: "Tích cực tham gia vào đời sống cộng đồng và tin tưởng vào hệ thống chính trị.", isCorrect: false },
+    { text: "Ý kiến khác.", isCorrect: true }
+  ],
+  explanation: "Những câu trả lời trên đều đúng nhưng chưa đủ .“Giữa nhịp sống vội vã, con người thường lãng quên việc chăm sóc điều gì – thứ quyết định sự bình yên hay bất an trong chính họ?”"
+
+},
+  {
     question: "Theo quan điểm của Đảng, nội dung cốt lõi của công tác tôn giáo là gì?",
     options: [
       { text: "Quản lý hành chính chặt chẽ", isCorrect: false },
@@ -336,8 +348,8 @@ export const courseQuizzes: QuizQuestion[] = [
       { text: "Xây dựng mới các cơ sở thờ tự", isCorrect: false },
     ],
     explanation: "Nghị quyết số 25-NQ/TW xác định: 'Nội dung cốt lõi của công tác tôn giáo là công tác vận động quần chúng'."
-  },
-  // Thêm các câu hỏi khác ở đây
+  }
+  
 ];
 
 
@@ -541,18 +553,18 @@ export const featuredTopics: Topic[] = [
 export const persons: Person[] = [
   {
     id: 'p1',
-    name: 'Khuông Việt (Ngô Chân Lưu)',
+    name: 'Quốc Sư  Khuông Việt (Ngô Chân Lưu)',
     religion: 'Phật giáo (Vô Ngôn Thông)',
     period: 'Đinh - Tiền Lê (Thế kỷ X)',
     birthDeath: '933–1011',
-    bio: 'Thiền sư Ngô Chân Lưu (Khuông Việt) — Tăng thống khai quốc; cao tăng kiêm cố vấn triều đình, đóng vai trò ngoại giao quan trọng với nhà Tống.',
+    bio: 'Khuông Việt thiền sư 匡越禪師 (933-1011) tên thật là Ngô Chân Lưu 吳真流 người hương Cát Lợi, huyện Thường Lạc, lúc bé học đạo Nho, lớn lên đi tu, là thế hệ thứ tư, dòng thiền Quan Bích, học trò sư Vân Phong ở chùa Khai Quốc, thành Đại La. Năm 40 tuổi nổi tiếng tinh thông Thiền học, được vua Đinh Tiên Hoàng (970-979) ban cho hiệu là Khuông Việt đại sư và phong chức Tăng thống, coi trọng như vị quốc sư.Khi vua Lê Đại Hành (980-1105) lên ngôi, ông được tham dự vào những việc quan trọng của triều đình. Năm 986, ông và sư Pháp Thuận được nhà vua cử ra giao thiệp với sứ giả nhà Tống là Lý Giác. Công việc hoàn thành tốt đẹp và khi sứ giả trở về, ông có sáng tác khúc ca Vương lang quy để tặng.Ông mất ngày 15 tháng Hai năm Tân Hợi, niên hiệu Thuận Thiên thứ hai (tức ngày 22-3-1011).Tác phẩm hiện còn bài từ Vương lang quy, 2 câu thơ, và một bài kệ ứng khẩu lúc sắp mất.',
     contributions: [
       'Thiết lập chức Tăng thống, thể chế hóa vai trò Phật giáo trong triều đình',
-      'Cố vấn triều chính, tham gia tổ chức bộ máy nhà nước',
+      'Cố vấn triều chính, tham gia tổ chức bộ máy triều chính',
       'Tham gia ngoại giao, góp phần bảo vệ độc lập trước nhà Tống'
     ],
-    imageUrl: '/images/ngo-chan-luu.jpg',
-    gallery: [],
+    imageUrl: 'https://th.bing.com/th/id/R.cd45784c6589175341422e75fa42e338?rik=Gz7A9nKA1nntEA&riu=http%3a%2f%2fthuviengdpt.info%2fwp-content%2fuploads%2f2020%2f07%2fToKhuongViet-NgoChanLuu_02.jpg&ehk=atj0GaeA1koLQcG9wDJKFEcY530kwRaUdP6gdHYR1RU%3d&risl=&pid=ImgRaw&r=0',
+    gallery: ['https://ngotoc.vn/uploads/news/2016_03/chua-dai-bi-den-giong-soc-son.jpg','https://t.ex-cdn.com/phatgiao.org.vn/resize/800x740/files/leduyen/2019/01/09/khuong-viet-thien-su-1108.jpg'],
     tags: ['tôn giáo','ngoại giao','chính trị']
   },
   {
@@ -560,15 +572,15 @@ export const persons: Person[] = [
     name: 'Vạn Hạnh',
     religion: 'Phật giáo',
     period: 'Tiền Lê - Lý (Thế kỷ X–XI)',
-    birthDeath: 'c. 937–1018/1025',
+    birthDeath: 'c. 937–1018',
     bio: 'Quốc sư Vạn Hạnh — thiền sư có ảnh hưởng lớn, người dìu dắt Lý Công Uẩn, tham gia chuyển giao quyền lực và thuyết phục dời đô về Thăng Long.',
     contributions: [
-      'Đạo diễn cuộc chuyển giao quyền lực (tạo nền tảng cho nhà Lý)',
-      'Cố vấn cho việc dời đô về Thăng Long',
+      'có công đức nuôi dưỡng, dạy dỗ Lý Công Uẩn trở thành tướng sĩ tài ba, văn võ song toàn, hữu dụng cho đất nước Đại Việt. Với cương vị cố vấn Quân sư, Quốc sư của các Triều Đinh, Tiền Lê và đầu Nhà Lý',
+      'giúp Vua Lý Thái Tổ dời đô từ Hoa Lư về thành Đại La – Thăng Long – Hà Nội ngày nay, tạo cho đất nước Đại Việt có một trung tâm văn hóa, chính trị xã hội ổn định không ngừng phát triển, vươn ra tầm cao mới, xứng đáng là Thủ đô ngàn năm văn hiến của Đại Việt cũng như Việt Nam ngày nay.',
       'Định hướng chính trị và tư tưởng cho vương triều mới'
     ],
-    imageUrl: '/images/van-hanh.jpg',
-    gallery: [],
+    imageUrl: 'https://i.ex-cdn.com/phatgiao.org.vn/files/content/2020/08/19/rm6a4947-copy-copy-0716.jpg',
+    gallery: ['https://i.ex-cdn.com/phatgiao.org.vn/files/content/2020/08/19/1604-quoc-su-van-hanh-cong-duc-doi-voi-dao-phap-va-dan-toc-0715.jpg','https://image.giacngo.vn/w645/UserImages/2018/07/21/15/chua%20tieu%20son.jpg'],
     tags: ['chính trị','đổi đô','tư tưởng']
   },
   {
@@ -577,14 +589,14 @@ export const persons: Person[] = [
     religion: 'Phật giáo (Sáng lập Thiền phái Trúc Lâm)',
     period: 'Nhà Trần (Thế kỷ XIII–XIV)',
     birthDeath: '1258–1308',
-    bio: 'Vua Trần, Phật hoàng — lãnh đạo tinh thần và quân sự trong hai cuộc kháng chiến chống Nguyên-Mông; sau nhường ngôi xuất gia, sáng lập Thiền phái Trúc Lâm, hòa hợp đạo & đời.',
+    bio: 'Đức vua Trần Nhân Tông tên húy là Khâm, sinh ngày 11/11 âm lịch năm Mậu Ngọ (tức 07/12/1258), là con trưởng của vua Trần Thánh Tông và Nguyên Thánh Thiên Cảm Hoàng hậu Trần Thị Thiều. Sinh thời, Ngài có tướng mạo rất phi phàm. Theo Đại Việt Sử ký toàn thư, khi sinh ra, thân Ngài có màu sắc hoàng kim, nước da vàng sáng rất đẹp, nên gọi Ngài là Phật kim. Ngài rất thông minh hiếu học, đọc hết sách vở, suốt thông nội điển (kinh) và ngoại điển (sách đời).Vào năm 1274, khi 16 tuổi, Ngài được phong làm Hoàng Thái tử. Đã hai lần Ngài từ chối ngôi vị nhưng vua cha không đồng ý. Sau đó, vua cha cưới trưởng nữ của Nguyên Từ Quốc Mẫu cho Ngài (tức là Khâm Từ Hoàng hậu sau này). Hai vợ chồng sống trong cảnh vui hòa, hạnh phúc nhưng tâm Ngài vẫn luôn ưa thích sự tu hành.Một hôm, vào nửa đêm, Ngài trèo thành trốn đi với ý định vào núi Yên Tử tu hành. Đến chùa Tháp núi Đông Cứu, vì người mệt nhọc quá, Ngài bèn vào nằm nghỉ trong tháp. Vị Sư trụ trì ở đây thấy tướng mạo Ngài phi phàm liền làm cơm thiết đãi. Vua cha hay tin, sai các quan đi tìm, bất đắc dĩ Ngài phải quay về cung thành.Khi trưởng thành, Ngài được vua cha đặc biệt quan tâm, nhằm chuẩn bị cho việc kế tục ngai vàng, chấn hưng Đại Việt. Năm 21 tuổi (năm 1279), Ngài lên ngôi Hoàng đế, hiệu là Trần Nhân Tông, tự xưng là Hiếu Hoàng. Tuy ở địa vị cao sang, Ngài vẫn giữ mình thanh tịnh và thường đến chùa Tư Phước tu tập. Một hôm nghỉ trưa, Ngài mơ thấy trong rốn mọc lên một hoa sen vàng lớn bằng bánh xe, trên hoa sen có Đức Phật vàng. Có người đứng bên cạnh Ngài nói: “Biết ông Phật này chăng? Là Đức Phật Biến Chiếu”. Tỉnh giấc, Ngài đem việc đó tâu lên vua cha. Vua Thánh Tông khen là việc kỳ lạ và đặc biệt.Sau giấc chiêm bao, Ngài bắt đầu ăn chay nên thân thể gầy ốm. Vua Thánh Tông biết được nên khóc than: “Nay ta đã già, chỉ trông cậy một mình con, con lại làm như thế, làm sao gánh vác được sự nghiệp của tổ tiên?” Mặc dù rơi nước mắt nhưng vua Trần Nhân Tông vẫn quyết ăn chay.Những khi giặc Nguyên sang xâm chiếm Đại Việt, Ngài gác việc tu học Phật Pháp để lo giữ gìn xã tắc. Với tài mưu lược sáng suốt, khả năng đoàn kết toàn dân, Ngài đã hai lần cùng vua cha và các tướng lĩnh lãnh đạo quân dân đánh tan quân xâm lược Nguyên - Mông (1285, 1287 - 1288), bảo vệ vững chắc nền độc lập, tự chủ của dân tộc.Sau 14 năm trị vì đất nước năm Quý Tỵ (1293), Ngài nhường ngôi cho con là Trần Thuyên (tức vua Trần Anh Tông) và lên ngôi Thái thượng hoàng, chuẩn bị con đường xuất gia tu hành.Đến tháng 10 năm Kỷ Hợi (1299), Ngài xuất gia tu hành ở núi Yên Tử (nay thuộc tỉnh Quảng Ninh). Ở đây, Ngài chuyên cần tu tập theo hạnh đầu đà (khổ hạnh), lấy hiệu là Hương Vân Đại Đầu-đà và sáng lập nên dòng Thiền Trúc Lâm Yên Tử. Sau đó Ngài lập chùa, cất tinh xá, khai giảng để tiếp độ chúng Tăng, vì vậy học chúng đua nhau đến rất đông.Sau đó, Ngài đến chùa Phổ Minh ở Phủ Thiên Trường (nay thuộc tỉnh Nam Định) lập giảng đường, giảng dạy mấy năm. Ngài lại vân du đến trại Bố Chính lập am Tri Kiến (nay thuộc tỉnh Quảng Bình) rồi ở đó. Khi tu tập trên núi Yên Sơn thành tựu được sự giác ngộ, Ngài xuống núi đi hoằng dương Phật Pháp, làm lợi lạc cho chúng sinh.Năm 1308, sau nhiều năm xuất gia tu tập, Thượng hoàng Trần Nhân Tông (hiệu là Trúc Lâm đại sĩ) viên tịch tại am Ngọa Vân, núi Yên Tử. Với những đóng góp to lớn của Trần Nhân Tông cho đạo pháp và dân tộc, Ngài đã được người đời kính trọng, sau được suy tôn là Phật Hoàng Trần Nhân Tông (hay còn gọi là vua Phật Việt Nam).',
     contributions: [
-      'Lãnh đạo kháng chiến chống Nguyên-Mông (1285, 1288)',
-      'Sáng lập và thống nhất Thiền phái Trúc Lâm (thiền thuần Việt)',
+      'Ngài đã hai lần cùng vua cha và các tướng lĩnh lãnh đạo quân dân đánh tan quân xâm lược Nguyên - Mông (1285, 1287 - 1288)',
+      'Sáng lập  Thiền phái Trúc Lâm Yên Tử (thiền thuần túy Việt Nam)',
       'Thực thi chính sách hòa giải, phục hồi kinh tế và củng cố khối đại đoàn kết'
     ],
-    imageUrl: '/images/tran-nhan-tong.jpg',
-    gallery: ['/images/tran-1.jpg','/images/tran-2.jpg'],
+    imageUrl: 'https://media.thaythichtructhaiminh.com/files/f1/2020/12/phat-hoang-tran-nhan-tong-so-to-thien-phai-truc-lam-yen-tu_optimized.jpg',
+    gallery: ['https://sohanews.sohacdn.com/160588918557773824/2024/8/6/chuyen-vua-tran-nhan-tong-coi-ao-dap-cho-thu-cap-tuong-dich-2797-1722930526548-1722930527162734366387.jpg','https://th.bing.com/th/id/R.256a64633dfe5c0d709d8f6847dbaac4?rik=d3wmL9rs%2bhQebA&riu=http%3a%2f%2fredsvn.net%2fwp-content%2fuploads%2f2018%2f09%2fTran-Nhan-Tong.jpg&ehk=GbmVuCmHjCIbFRvN2gWe0ah08usYJEA3I1fbkGdYjWA%3d&risl=&pid=ImgRaw&r=0','https://ik.imagekit.io/tvlk/blog/2023/05/nui-yen-tu-4.jpg?tr=dpr-2,w-675'],
     tags: ['quốc gia','văn hóa','lãnh đạo']
   },
   {
@@ -593,14 +605,15 @@ export const persons: Person[] = [
     religion: 'Bửu Sơn Kỳ Hương',
     period: 'Nguyễn (Thế kỷ XIX)',
     birthDeath: '1807–1856',
-    bio: 'Phật Thầy Tây An — người sáng lập Bửu Sơn Kỳ Hương; chữa bệnh, tổ chức tín đồ khai hoang và lập các trung tâm dinh điền ở Nam Bộ.',
+    bio: 'Đoàn Minh Huyên còn có tên là Đoàn Văn Huyên, đạo hiệu: Giác Linh, quê ở Tòng Sơn, Cái Tàu thượng, tổng An Thạnh thượng, tỉnh Sa Đéc (nay thuộc tỉnh Đồng Tháp).Năm 1849, ở Nam Kỳ, xảy ra vụ mất mùa và đại dịch (kéo dài đến 1850), đã làm nhân dân lâm vào cảnh cùng cực, khổ đau và chết chóc. Trong hoàn cảnh ấy, ông Đoàn Minh Huyên từ Tòng Sơn vào Tràm Dư, rồi đến vùng Kiến Thạnh (nay là làng Long Kiến, huyện Chợ Mới, tỉnh An Giang) trổ tài trị bệnh cho dân. Từ chỗ chữa trị bệnh có kết quả, ông dìu dắt được nhiều bệnh nhân và người thân của họ nghe theo những điều dạy khuyên của ông.Thấy người tin theo ngày một đông, nên ngay năm ấy (1849), ông đã sáng lập ra đạo Bửu Sơn Kỳ Hương, với tôn chỉ và phương pháp hành đạo rất đơn giản.Nghe ông chữa bệnh bằng nước cúng (nước lã), bông cúng,...đồng thời rao giảng đạo, quan tỉnh An Giang nghi ngờ ông là gian đạo sĩ, hoạt động chính trị nên bắt giam, nhưng xét không có bằng chứng phải thả tự do cho ông. Song ông buộc phải quy y theo đạo phật (phái Lâm Tế) và tu tại chùa Tây An, dưới chân núi Sam (Châu Đốc). Từ đó, ông được người dân tin tưởng gọi tôn kính là Phật Thầy Tây An.Mặc dù bị chỉ định cư trú, song ông vẫn thường đi lại khắp miền sông Hậu, phổ biến giáo lý Tứ Ân, đồng thời vận động dân nghèo khai hoang, dần hình thành 4 trung tâm dinh điền lớn, đó là Đồng Tháp Mười(Đồng Tháp), Thới Sơn (Tịnh Biên), Láng Linh và Cái Dầu (đều thuộc Châu Phú)...Phật Thầy Tây An viên tịch ngày 10 tháng 9 năm 1856), lúc 49 tuổi. Hiện mộ ông ở phía sau chùa Tây An (Châu Đốc), không đấp nấm theo lời căn dặn của ông.Tương truyền, Phật Thầy Tây An có viết mấy quyển kinh, kệ sau đây:-Chuẩn đề chú,-Thái dương kinh-Khai kinh kệ-Thái âm kinh .Ông có nhiều đệ tử giỏi, như Đức Cố Quản (Trần Văn Thành), Tăng Chủ (Bùi Đình Thân), Đạo Xuyến (Nguyễn Văn Xuyến), Đạo Lập (Phạm Thái Chung), Đạo Thắng (Nguyễn Văn Thắng),v.v...',
     contributions: [
+      'chữa trị bệnh , hỗ trợ kết thúc đại dịch năm 1850',
       'Sáng lập đạo Bửu Sơn Kỳ Hương',
-      'Tổ chức tín đồ khai hoang, lập 4 trung tâm dinh điền lớn, mở mang bờ cõi Nam Bộ',
-      'Xây dựng các trại ruộng/căn cứ dân sinh có giá trị cho kháng chiến sau này'
+      'Tổ chức tín đồ khai hoang, lập 4 trung tâm dinh điền lớn, mở mang bờ cõi Nam Bộ'
+      
     ],
-    imageUrl: '/images/doan-minh-huyen.jpg',
-    gallery: [],
+    imageUrl: 'https://tongphuochiep-vinhlong.com/wp-content/uploads/2021/02/Untitled.jpg',
+    gallery: ['https://tongphuochiep-vinhlong.com/wp-content/uploads/2021/02/H2-353x700.jpg','https://1.bp.blogspot.com/-io3297ah734/XygfIDOeOSI/AAAAAAAAA2E/lu771vjLD9czXwqWtAp9L0Peo0z2t7UOgCLcBGAsYHQ/s1600/cu-lao-ong-chuong-1.jpg'],
     tags: ['khai hoang','Nam Bộ','xã hội']
   },
   {
@@ -609,14 +622,14 @@ export const persons: Person[] = [
     religion: 'Công giáo',
     period: 'Nguyễn (Thế kỷ XIX)',
     birthDeath: '1830–1871',
-    bio: 'Nhà trí thức Công giáo — tác giả nhiều bản điều trần kêu gọi cải cách (giáo dục, kinh tế, quân sự) nhằm canh tân đất nước trước hiểm họa thực dân.',
+    bio: 'Nguyễn Trường Tộ sinh năm 1830 tại làng Bùi Chu, nay thuộc xã Hưng Trung, huyện Hưng Nguyên, tỉnh Nghệ An, trong một gia đình Công giáo, cha làm nghề thuốc Đông y. Từ nhỏ, ông nổi tiếng thông minh, học một biết mười, được mệnh danh là “Trạng Tộ”.Ông được tiếp thu cả văn hóa Đông – Tây, cổ – kim. Thuở thiếu thời, Nguyễn Trường Tộ học Hán học trong vùng và sau đó được giám mục Gauthier dạy tiếng Pháp cùng các môn khoa học cơ bản – những kiến thức hiếm có đối với trí thức Việt Nam lúc bấy giờ. Năm 20 tuổi, ông có dịp sang Pháp, Ý, Hồng Kông để học hỏi, mở rộng hiểu biết về văn minh phương Tây, tham quan các cơ sở công kỹ nghệ, gặp gỡ học giả và kỹ sư châu Âu. Từ đó, ông hình thành tư tưởng canh tân, khát vọng giúp nước, giúp dân.Sống trong thời kỳ đất nước bị thực dân Pháp xâm lược, ông thấu hiểu nỗi lầm than của nhân dân và nhận thấy thế nước yếu, triều đình bảo thủ, lúng túng. Năm 1863, ông dâng lên triều đình ba bản điều trần nổi tiếng: “Tế cấp luận”, “Giáo môn luận” và “Thiên hạ phân hợp đại thế luận”, trong đó Tế cấp luận được xem là quan trọng nhất. Ông khẳng định: “Việc khẩn cấp nhất của đất nước là giữ cho được những gì chưa mất. Muốn vậy phải mau mau canh tân đất nước.”Tư tưởng canh tân, tự cường dân tộc của Nguyễn Trường Tộ thể hiện trong 58 bản điều trần gửi vua Tự Đức suốt 10 năm (1861–1871), đề cập đến các lĩnh vực chính trị, kinh tế, giáo dục, khoa học và quân sự. Cụ thể:Chính trị – ngoại giao: hòa hoãn để tìm thời cơ, mở rộng bang giao, khôi phục chủ quyền.Kinh tế – tài chính: cải cách thuế má, khai hoang, khai thác tài nguyên.Giáo dục – khoa học: đổi mới giáo dục, gửi học sinh du học, học tập kỹ nghệ tiên tiến.Quân sự: tinh binh tinh cán, hiện đại hóa vũ khí.Tuy có tài năng xuất chúng và tấm lòng yêu nước sâu sắc, Nguyễn Trường Tộ lại không được trọng dụng do sự bảo thủ và thành kiến tôn giáo của triều đình. Dẫu vậy, ông vẫn kiên trì, bền bỉ đấu tranh tư tưởng, thể hiện phẩm chất của một nhà cải cách lớn, một trí thức yêu nước tiêu biểu của thế kỷ XIX.Nguyễn Trường Tộ mất năm 1871, để lại dấu ấn sâu đậm trong lịch sử tư tưởng canh tân đất nước Việt Nam.',
     contributions: [
       'Soạn hàng loạt điều trần đề xuất cải cách toàn diện (giáo dục, quân sự, kinh tế, ngoại giao)',
       'Thúc đẩy phổ cập kiến thức thực tiễn và dùng chữ Quốc ngữ để mở rộng dân trí',
       'Đại diện cho khuynh hướng tiếp nhận khoa học - kỹ thuật phương Tây nhằm tự cường'
     ],
-    imageUrl: '/images/nguyen-truong-to.jpg',
-    gallery: [],
+    imageUrl: 'https://sidoni.net/upload/baiquet/thumb/tim-hieu-tieu-su-cuoc-doi-va-su-nghiep-cua-nguyen-truong-to7161.jpg',
+    gallery: ['https://giaoxuchauson.com/uploads/news/2019/a.2_59.jpg','https://baotanglichsu.vn/DataFiles/Uploaded/image/cao%20ba%20quat/A%202a.jpg'],
     tags: ['cải cách','giáo dục','hội nhập']
   },
   {
@@ -625,14 +638,14 @@ export const persons: Person[] = [
     religion: 'Phật giáo Hòa Hảo',
     period: 'Cận đại (Thế kỷ XX)',
     birthDeath: '1920–1947',
-    bio: 'Người sáng lập Phật giáo Hòa Hảo — phát triển phong trào tu tại gia ở miền Tây, nhấn mạnh Tứ Ân (trong đó có Ân Đất Nước) và khơi dậy tinh thần yêu nước trong quần chúng.',
+    bio: 'Huỳnh Phú Sổ sinh ngày 15 tháng 1 năm 1920, nhằm ngày 25 tháng 11 năm Kỷ Mùi tại làng Hoà Hảo, quận Tân Châu, tỉnh Châu Đốc, (nay thuộc thị trấn Phú Mỹ, huyện Phú Tân, tỉnh An Giang); con của ông Hương Cả (người đứng đầu trong làng) Huỳnh Công Bộ và bà Lê Thị Nhậm. Thuở nhỏ ông thông minh, học hết bằng sơ học yếu lược Pháp - Việt nhưng hay bị đau ốm nên đành bỏ dở việc học.Trong một lần lên núi Sam (thuộc Bảy Núi, An Giang), tiếp xúc với phái Phật giáo Bửu Sơn Kỳ Hương, Huỳnh Phú Sổ giỏi trị bệnh và luyện chí tu hành. Năm 1937, ông về làng chữa bệnh cho dân, và viết sám giảng Khuyên người đời tu niệm (1939)2 .Từ thuở bé, Huỳnh Phú Sổ đã có căn tính của một người tu hành, ông không thích đàn địch, ca hát, cười giỡn như các bạn cùng trang lứa, lúc nào ông cũng trầm tư, tỉnh mặc, thích ở nơi thanh vắng, yên tĩnh. Ông lại hổ thẹn và phản đối ngay khi nghe song thân bàn chuyện kiếm người bạn đời cho ông.Ngày 18 tháng 5 năm Kỷ Mão, tức ngày 4 tháng 7 năm 1939, Huỳnh Phú Sổ tuyên bố khai lập đạo Phật giáo Hòa Hảo, khi ấy ông chỉ mới 19 tuổi.”Khai đạo”Ngày 18 tháng 5 năm Kỷ Mão (4 tháng 7 năm 1939), Huỳnh Phú Sổ đứng ra cử hành lễ "Đền linh Khứu Sơn trung thọ mạng" khai đạo, lấy tên là Phật giáo Hòa Hảo, đó vừa là tên quê hương ông vừa có ý nghĩa là "hiếu hòa" và "giao hảo", lại mang một hàm nghĩa là đạo Phật ở làng Hòa Hảo. Từ đó, ông đi chữa bệnh, tiên tri, thuyết pháp và sáng tác thơ văn, kệ giảng. Văn chương của ông bình dân nên dễ đi vào lòng người. Chỉ trong một thời gian ngắn số tín đồ và ảnh hưởng của ông càng ngày càng gia tăng và trở thành một phong trào tín ngưỡng mạnh mẽ khiến Thực dân Pháp lo ngại.Ngày 18 tháng 8 năm 1940, Thực dân Pháp đưa Huỳnh Phú Sổ đi quản thúc tại Sa Đéc.Ngày 23 tháng 5 năm 1940, Thực dân Pháp chuyển ông sang quản thúc ở làng Nhơn Nghĩa, tỉnh Cần Thơ nhưng cả hai nơi này đều được đông đảo quần chúng đến xin nghe thuyết pháp và quy y Phật giáo Hòa Hảo.Vì vậy ngày 28 tháng 7 năm 1940, nhà cầm quyền Pháp đưa Huỳnh Phú Sổ vào bệnh viện Cần Thơ và sau đó chuyển lên nhà thương điên Chợ Quán tại Sài Gòn.Tháng 6 năm 1941, Huỳnh Phú Sổ bị đưa đi quản thúc ở Bạc Liêu. Tại đây ông không được phép trị bệnh và thuyết pháp.Tháng 10 năm 1942, trước tin tức người Pháp sẽ đưa Huỳnh Phú Sổ đi đày ở Ai Lao (Lào), các tín đồ Phật giáo Hòa Hảo và hiến binh Nhật đã giải cứu ông đem về Sài Gòn.Từ tháng 6 đến tháng 8 năm 1945, Huỳnh Phú Sổ đi thuyết pháp và khuyến nông tại 107 địa điểm ở các tỉnh miền Tây Nam Bộ.” Hoạt động chính trị”Ngày 14 tháng 8 năm 1945, Huỳnh Phú Sổ cùng Hồ Văn Ngà, Trần Văn Ân, Nguyễn Văn Sâm, Trần Văn Thạch...đã thành công liên kết tất cả đảng phái và thành lập Mặt trận Quốc gia Thống nhất. Một ngày sau, Nhật tuyên bố đầu hàng vô điều kiện. Ngày 21 tháng 8 năm 1945 Mặt Trận Quốc gia Thống Nhất tổ chức một cuộc biểu tình vĩ đại với trên 200.000 người tham dự, nhưng những người lãnh đạo đã không tuyên bố Việt Nam độc lập và cũng không cướp chính quyền..Một ngày sau, ngày 22/8/1945 Việt Minh cướp chính quyền tại Hà Nội sau một cuộc biểu tình trước nhà hát lớn Hà Nội. Chỉ một ngày sau, ngày 23/8/1945 vua Bảo đại tuyên bố thoái vị và trao quyền lãnh đạo cho Việt Minh. Ngày 24/8/1945 Tổng Bộ Việt Minh phái vào Nam Hoàng Quốc Việt (tức Hà Bá Cang) và Cao Hồng Lãnh. Ngày 25/8/1945 vua Bảo Đại trao quyền và trao ấn, kiếm của Nhà Nguyễn cho đại diện Việt Minh là Trần Huy Liệu.Ngày 25 tháng 8 năm 1945, Việt Minh tổ chức biểu tình và cướp chính quyền tại Sài Gòn.Nơi sinh sống của Huỳnh Phú Sổ, nay là Tổ đình Phật giáo Hòa Hảo. (Phú Mỹ, Phú Tân, An Giang).Ngày 8 tháng 9 năm 1945, Phật giáo Hòa Hảo biểu tình tại Cần Thơ.Ngày 9 tháng 9 năm 1945, Việt Minh cho Quốc gia Tự vệ Cuộc bao vây trụ sở Phật giáo Hòa Hảo ở số 8 đường Sohier, Sài Gòn để bắt Huỳnh Phú Sổ nhưng ông trốn thoát.3Ngày 7 tháng 10 năm 1945, những người Phật giáo Hòa Hảo cầm đầu biểu tình như Huỳnh Thạnh Mậu (em ruột Huỳnh Phú Sổ),Trần Ngọc Hoành (con ông Trần Văn Soái - tức Năm Lửa), Nguyễn Xuân Thiếp (tức nhà thơ Việt Châu - Anh chú bác với học giả Nguyễn Hiến Lê) bị cho là âm mưu cướp chính quyền và đưa ra xử tử hình tại sân vận động Cần Thơ.Ngày 26 tháng 10 năm 1945, Pháp tái chiếm Cần Thơ. Tín đồ Hòa Hảo lùng bắt Việt Minh.Sau tạm ước ngày 6 tháng 3 năm 1946 giữa Pháp và Việt Minh. Việt Minh cải thiện quan hệ với Hòa Hảo. Huỳnh Phú Sổ tham gia Ủy ban Hành chánh Kháng chiến Nam Bộ (do Việt Minh lãnh đạo) với chức vụ Ủy viên Đặc biệt.Ngày 21 tháng 9 năm 1946, Huỳnh Phú Sổ và một số trí thức thiên tả có khuynh hướng dân tộc, dân chủ thành lập Việt Nam Dân chủ Xã hội Đảng, gọi tắt là Dân Xã đảng.Ngày 17 tháng 2 năm 1947, đại diện của Huỳnh Phú Sổ là Nguyễn Bảo Toàn cùng với lãnh tụ các đảng quốc gia khác như: Nguyễn Hải Thần (Việt Nam Cách mạng Đồng minh Hội), Nguyễn Tường Tam (Việt Nam Quốc dân đảng) thành lập Mặt trận Thống nhất Quốc gia Liên hiệp với mục đích hậu thuẫn Bảo Đại đàm phán với Pháp thành lập Quốc gia Việt Nam.Ngày 16 tháng 4 năm 1947, Huỳnh Phú Sổ đột ngột mất tích khi đến Tân Phú, Đồng Tháp Mười để hòa giải sự xung đột giữa Việt Minh và Phật giáo Hòa Hảo. Theo tài liệu của phương Tây và Việt Nam Cộng hòa thì ông đã bị Việt Minh thủ tiêu.',
     contributions: [
       'Thành lập Phật giáo Hòa Hảo và phổ biến giáo lý giản dị, gắn với đời sống nông dân',
       'Khơi dậy tinh thần yêu nước và tổ chức quần chúng tham gia các phong trào kháng chiến',
       'Đóng góp cho an sinh và tổ chức cộng đồng nông thôn'
     ],
-    imageUrl: '/images/huynh-phu-so.jpg',
-    gallery: [],
+    imageUrl: 'https://i.pinimg.com/736x/64/f0/67/64f0670bba997091c4f879f5251bf311.jpg',
+    gallery: ['https://tse1.mm.bing.net/th/id/OIP.oUAa_TIpkvsGF3QJUYwtXAHaFL?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3','https://yt3.ggpht.com/gkwVABZVHzrr_S37RyGmkiXZj0Ss3bq65srn315YpS4Nh7qk7i44P3NPhp4EjAOYzQeN_3dXRKMCcA=s1499-c-fcrop64=1,0da70000f258ffff-nd-v1?days_since_epoch=19940','https://images2.thanhnien.vn/Uploaded/bienca/2022_12_18/e5126122b07a6824316b-5506.jpg'],
     tags: ['nông thôn','phong trào','kháng chiến']
   },
   {
@@ -641,14 +654,14 @@ export const persons: Person[] = [
     religion: 'Phật giáo',
     period: 'Kháng chiến chống Pháp (1947)',
     birthDeath: '',
-    bio: 'Ngày 27/2/1947 tại chùa Cổ Lễ (Nam Định), 27 nhà sư đã phát nguyện “cởi áo cà sa, khoác chiến bào”, thành lập Trung đội Phật tử Vệ quốc đoàn. Đây là biểu tượng của tinh thần nhập thế, yêu nước và sẵn sàng hy sinh vì Tổ quốc.',
+    bio: 'Năm 1947, hưởng ứng Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh, giới tăng ni, Phật tử cả nước đã dấy lên Phong trào “Cởi áo cà sa, khoác chiến bào”. Tiêu biểu cho phong trào đó là sự kiện 27 nhà sư đã thành lập “Trung đội Phật tử” ngày 27-2-1947 tại chùa Cổ Lễ (Nam Định).Ngày 27/2/1947, dưới sự chủ trì của Hòa thượng Thích Thế Long, một buổi lễ phát nguyện đặc biệt đã diễn ra long trọng tại chùa Cổ Lễ. Không tụng kinh, không chuông mõ hôm ấy, 27 nhà sư đã làm lễ “cởi áo cà sa, khoác chiến bào” để lên đường chiến đấu chống thực dân Pháp, bảo vệ quê hương. Họ là những người con yêu nước đến từ nhiều tỉnh như Nam Định, Nghệ An, Hải Phòng, Ninh Bình. Trong không khí xúc động, chư ni Thích Đàm Nhung đã dõng dạc đọc lời phát nguyện:“Cởi áo cà sa khoác chiến bào-Việc quân đâu có quản gian lao-Gậy thiền quét sạch loài xâm lược-Theo gót Trưng Vương tỏ nữ hào” .Ngay sau đó, 27 nhà sư chính thức nhập ngũ, bước vào chiến trường đầy khốc liệt. Trong số họ, 12 vị đã hy sinh anh dũng nơi chiến trận. Những người còn lại  hoặc tiếp tục phục vụ trong quân đội, hoặc trở về với cửa thiền, đóng góp lớn lao cho Giáo hội Phật giáo Việt Nam.',
     contributions: [
       'Thành lập Trung đội Phật tử tại chùa Cổ Lễ năm 1947',
       'Tham gia chiến đấu bảo vệ Tổ quốc trong kháng chiến chống Pháp',
       'Khơi dậy phong trào yêu nước trong giới Phật giáo với tinh thần "đạo pháp gắn liền dân tộc"'
     ],
-    imageUrl: '/images/chua-co-le.jpg',
-    gallery: ['/images/co-le-1.jpg','/images/co-le-2.jpg'],
+    imageUrl: 'https://bchannel.vn/wp-content/uploads/2024/07/chua-nam-dinh-8-1.jpg',
+    gallery: ['https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2023/5/3/1187551/Chua-Co-Le-6.jpg','https://tse3.mm.bing.net/th/id/OIP.qNjp-abkSmauvzDCmN-3wAHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3'],
     coords: [{ lat: 20.3229, lng: 106.1977 }],
     tags: ['kháng chiến','phật giáo','yêu nước']
   },
@@ -658,117 +671,67 @@ export const persons: Person[] = [
     religion: 'Phật giáo',
     period: 'Kháng chiến chống Pháp - hiện đại',
     birthDeath: '',
-    bio: 'Nhà sư Thích Pháp Lữ (thế danh Đinh Thế Hinh) là một trong 27 tăng sĩ chùa Cổ Lễ “cởi áo cà sa, khoác chiến bào”. Ông đã cống hiến trọn đời cho quân đội và được phong quân hàm Đại tá Quân đội nhân dân Việt Nam.',
+    bio: ' Sinh năm 1927 tại làng Liêu Thượng, xã Xuân Thành, huyện Xuân Trường, tỉnh Nam Định, ông là con út trong gia đình có 8 người con, gia đình nghèo nhưng sùng đạo, nhiều đời kính ngưỡng Phật pháp. Vì là con trai duy nhất, ông được kỳ vọng sẽ thay cha gìn giữ nếp nhà và đạo lý. Năm 13 tuổi, ông được cha mẹ gửi lên chùa Cổ Lễ - một trong những ngôi chùa cổ kính bậc nhất vùng Đồng bằng Bắc Bộ để tu học, pháp danh được đặt là Thích Pháp Lữ, thể hiện chí nguyện hành trì giáo pháp, sống cuộc đời thanh tịnh.Tại chùa, ông theo pháp môn Tịnh độ - lấy tín nguyện và hành trì niệm danh hiệu Đức Phật A Di Đà làm căn bản tu hành. Nhưng điều đáng quý hơn cả là dù mới chỉ là một hình đồng nhỏ tuổi, ông đã sớm tỏ ra thông minh, chăm chỉ và giàu lòng từ bi. Được các bậc tôn túc thương yêu, gửi gắm, ông lần lượt đi học tiếp tại nhiều chùa lớn khắp miền Bắc: chùa Bút Tháp (Bắc Ninh), chùa Quán Sứ (Hà Nội), chùa Côn Sơn (Hải Dương)... Trong suốt 5 năm tu học, ông không chỉ tinh tấn tu hành mà còn học chữ Quốc ngữ, bồi dưỡng về giáo lý, đọc sách Hán - Nôm và truyền dạy lại cho các bạn đồng tu.Năm 1945, khi Cách mạng Tháng Tám thành công, ông trở về chùa Cổ Lễ phụ giúp Hòa thượng Thích Thế Long trụ trì và bắt đầu dạy chữ Quốc ngữ cho các tăng sinh, tiếp tục hành đạo trong bối cảnh đất nước vừa giành lại nền độc lập nhưng cũng đang đứng trước hiểm họa tái xâm lược của thực dân Pháp.Năm 1946, chiến tranh lan rộng, quân Pháp chiếm đóng trở lại nhiều vùng ở miền Bắc, chùa Cổ Lễ - linh thiêng và yên bình - cũng không tránh khỏi vòng vây kẻ thù, những người tu hành bị buộc phải sơ tán. Trong tình thế đó, các nhà sư không thể đứng ngoài vận mệnh quốc gia. Về nội tâm của Thích Pháp Lữ - chàng trai tuổi chưa tròn đôi mươi, ý chí bảo vệ đạo pháp, hộ quốc an dân đã nung nấu mãnh liệt.Mùa xuân năm 1947, tại chùa Cổ Lễ, hưởng ứng Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh, Hòa thượng Thích Thế Long triệu tập tăng ni trong vùng, tổ chức lễ phát nguyện đặc biệt “Cởi áo cà sa, khoác chiến bào”. Buổi sáng hôm đó, giữa không khí thiêng liêng tràn ngập sân chùa, 27 vị sư trẻ đứng trước Phật đài, trước quốc kỳ và hương hồn tổ tiên, long trọng hạ quyết tâm từ bỏ chiếc áo nâu sồng, gia nhập Vệ quốc đoàn, trở thành những chiến sĩ đầu tiên trong Đội quân Phật tử Việt Nam. Những lời phát biểu của hòa thượng trụ trì hôm đó vẫn in đậm trong ký ức Đại đức Thích Pháp Lữ: “Giặc ngoại xâm đe dọa chủ quyền đất nước, bọn ác quỷ lăm le ngay cửa Phật. Phật pháp bất ly thế gian, khi sơn hà nguy biến, dân chúng điêu linh, các phật tử cũng phải góp sức đánh giặc, cứu nước...”.Từ giây phút ấy, Thích Pháp Lữ trở thành người chiến sĩ mang trong tim hình bóng của Phật, nhưng tay cầm súng, vai đeo ba lô hành quân về chiến khu.Sau khi nhập ngũ, Thích Pháp Lữ (nay là đồng chí Đinh Thế Hinh) được phân công làm Đội trưởng Đội Võ trang tuyên truyền, phụ trách khu vực Bùi Chu, Xuân Trường - những vùng đất Phật giáo sâu đậm. Đội của ông hoạt động bí mật trong vùng địch kiểm soát, vừa tuyên truyền cho Cách mạng, vận động Nhân dân, vừa tiêu diệt những phần tử phản động, bảo vệ cơ sở.Trong ký ức, ông còn nhớ có lần suýt hy sinh. Đó là một buổi trưa năm 1951, khi ông đang hoạt động tại làng Hành Thiện thì bị địch bao vây. Trong tình thế không lối thoát, ông nhanh trí giả làm nhà sư đang ngồi gõ mõ niệm kinh Bát Nhã giữa đám chay với áo nâu, mũ ốc. Quân Pháp vào làng lục soát, thấy ông giống nhà sư thật nên rút đi. Lần đó ông thoát nạn nhờ trí tuệ và... sự hộ trì của Tam bảo!Sau đó, ông tiếp tục hoạt động cho đến ngày miền Bắc hoàn toàn giải phóng, được kết nạp vào Đảng, tiếp tục học tập và trưởng thành trong quân đội. Khi cuộc kháng chiến chống Mỹ cứu nước bước vào giai đoạn ác liệt, ông trở thành Chính ủy Trung đoàn 542 - Bộ Tư lệnh Trường Sơn, đơn vị đóng quân tại A Lưới, Thừa Thiên - Huế.Năm 1972, trong một trận ném bom của máy bay B-52, chỉ huy sở của đơn vị bị đánh sập, hàng chục cán bộ, chiến sĩ hy sinh, Chính ủy Đinh Thế Hinh bị vùi trong đất đá. Tưởng ông đã hy sinh, đồng đội chuẩn bị khâm liệm. Nhưng kỳ diệu thay, sau nhiều giờ hôn mê, ông bất ngờ tỉnh dậy và dùng hết sức đạp tung tấm nylon phủ trên người. Mọi người òa khóc khi thấy ông vẫn còn sống.Sau ba ngày cấp cứu, ông hồi phục và trở lại đơn vị. Ký ức đau thương đó trở thành dấu ấn không thể phai mờ trong cuộc đời binh nghiệp của vị sư xuất trận.Sau ngày đất nước hoàn toàn thống nhất, Đại tá Đinh Thế Hinh nghỉ hưu, nhưng vẫn tiếp tục việc đạo. Ông trở về đời sống cư sĩ, tiếp tục cống hiến cho đạo pháp bằng cách viết bài, giảng giải giáo lý nhà Phật, phổ biến tư tưởng nhập thế cho lớp trẻ.Ông cộng tác với nhiều tạp chí Phật giáo, viết các bài bình luận về triết lý nhân sinh, đạo đức ứng xử trong xã hội hiện đại. Với giọng văn mộc mạc, ông không nói những lời quá cao siêu về đạo Phật, mà viết cho con người, cho đời sống và lương tri. Không ngày nào ông không đọc sách Phật, viết bài, soạn tài liệu. Trong căn hộ nhỏ, hàng trăm cuốn sách vẫn được ông gìn giữ, trân trọng như bảo vật. Ông từng tâm sự: “Tu hành là sự lựa chọn của tâm, không nhất thiết phải ở chùa. Hộ quốc an dân, giúp đời, truyền đạo cũng là tu hành”.',
     contributions: [
       'Tham gia Trung đội Phật tử năm 1947',
       'Trực tiếp chiến đấu trong kháng chiến chống Pháp và chống Mỹ',
       'Gắn bó trọn đời với quân đội, tiêu biểu cho tinh thần “từ bi và dũng cảm”'
     ],
-    imageUrl: '/images/thich-phap-lu.jpg',
-    gallery: [],
+    imageUrl: 'https://khuongviet.com.vn/wp-content/uploads/2024/07/IMG_8202.jpeg',
+    gallery: ['Sinh năm 1927 tại làng Liêu Thượng, xã Xuân Thành, huyện Xuân Trường, tỉnh Nam Định, ông là con út trong gia đình có 8 người con, gia đình nghèo nhưng sùng đạo, nhiều đời kính ngưỡng Phật pháp. Vì là con trai duy nhất, ông được kỳ vọng sẽ thay cha gìn giữ nếp nhà và đạo lý. Năm 13 tuổi, ông được cha mẹ gửi lên chùa Cổ Lễ - một trong những ngôi chùa cổ kính bậc nhất vùng Đồng bằng Bắc Bộ để tu học, pháp danh được đặt là Thích Pháp Lữ, thể hiện chí nguyện hành trì giáo pháp, sống cuộc đời thanh tịnh.Tại chùa, ông theo pháp môn Tịnh độ - lấy tín nguyện và hành trì niệm danh hiệu Đức Phật A Di Đà làm căn bản tu hành. Nhưng điều đáng quý hơn cả là dù mới chỉ là một hình đồng nhỏ tuổi, ông đã sớm tỏ ra thông minh, chăm chỉ và giàu lòng từ bi. Được các bậc tôn túc thương yêu, gửi gắm, ông lần lượt đi học tiếp tại nhiều chùa lớn khắp miền Bắc: chùa Bút Tháp (Bắc Ninh), chùa Quán Sứ (Hà Nội), chùa Côn Sơn (Hải Dương)... Trong suốt 5 năm tu học, ông không chỉ tinh tấn tu hành mà còn học chữ Quốc ngữ, bồi dưỡng về giáo lý, đọc sách Hán - Nôm và truyền dạy lại cho các bạn đồng tu.Năm 1945, khi Cách mạng Tháng Tám thành công, ông trở về chùa Cổ Lễ phụ giúp Hòa thượng Thích Thế Long trụ trì và bắt đầu dạy chữ Quốc ngữ cho các tăng sinh, tiếp tục hành đạo trong bối cảnh đất nước vừa giành lại nền độc lập nhưng cũng đang đứng trước hiểm họa tái xâm lược của thực dân Pháp.Năm 1946, chiến tranh lan rộng, quân Pháp chiếm đóng trở lại nhiều vùng ở miền Bắc, chùa Cổ Lễ - linh thiêng và yên bình - cũng không tránh khỏi vòng vây kẻ thù, những người tu hành bị buộc phải sơ tán. Trong tình thế đó, các nhà sư không thể đứng ngoài vận mệnh quốc gia. Về nội tâm của Thích Pháp Lữ - chàng trai tuổi chưa tròn đôi mươi, ý chí bảo vệ đạo pháp, hộ quốc an dân đã nung nấu mãnh liệt.Mùa xuân năm 1947, tại chùa Cổ Lễ, hưởng ứng Lời kêu gọi toàn quốc kháng chiến của Chủ tịch Hồ Chí Minh, Hòa thượng Thích Thế Long triệu tập tăng ni trong vùng, tổ chức lễ phát nguyện đặc biệt “Cởi áo cà sa, khoác chiến bào”. Buổi sáng hôm đó, giữa không khí thiêng liêng tràn ngập sân chùa, 27 vị sư trẻ đứng trước Phật đài, trước quốc kỳ và hương hồn tổ tiên, long trọng hạ quyết tâm từ bỏ chiếc áo nâu sồng, gia nhập Vệ quốc đoàn, trở thành những chiến sĩ đầu tiên trong Đội quân Phật tử Việt Nam. Những lời phát biểu của hòa thượng trụ trì hôm đó vẫn in đậm trong ký ức Đại đức Thích Pháp Lữ: “Giặc ngoại xâm đe dọa chủ quyền đất nước, bọn ác quỷ lăm le ngay cửa Phật. Phật pháp bất ly thế gian, khi sơn hà nguy biến, dân chúng điêu linh, các phật tử cũng phải góp sức đánh giặc, cứu nước...”.Từ giây phút ấy, Thích Pháp Lữ trở thành người chiến sĩ mang trong tim hình bóng của Phật, nhưng tay cầm súng, vai đeo ba lô hành quân về chiến khu.Sau khi nhập ngũ, Thích Pháp Lữ (nay là đồng chí Đinh Thế Hinh) được phân công làm Đội trưởng Đội Võ trang tuyên truyền, phụ trách khu vực Bùi Chu, Xuân Trường - những vùng đất Phật giáo sâu đậm. Đội của ông hoạt động bí mật trong vùng địch kiểm soát, vừa tuyên truyền cho Cách mạng, vận động Nhân dân, vừa tiêu diệt những phần tử phản động, bảo vệ cơ sở.Trong ký ức, ông còn nhớ có lần suýt hy sinh. Đó là một buổi trưa năm 1951, khi ông đang hoạt động tại làng Hành Thiện thì bị địch bao vây. Trong tình thế không lối thoát, ông nhanh trí giả làm nhà sư đang ngồi gõ mõ niệm kinh Bát Nhã giữa đám chay với áo nâu, mũ ốc. Quân Pháp vào làng lục soát, thấy ông giống nhà sư thật nên rút đi. Lần đó ông thoát nạn nhờ trí tuệ và... sự hộ trì của Tam bảo!Sau đó, ông tiếp tục hoạt động cho đến ngày miền Bắc hoàn toàn giải phóng, được kết nạp vào Đảng, tiếp tục học tập và trưởng thành trong quân đội. Khi cuộc kháng chiến chống Mỹ cứu nước bước vào giai đoạn ác liệt, ông trở thành Chính ủy Trung đoàn 542 - Bộ Tư lệnh Trường Sơn, đơn vị đóng quân tại A Lưới, Thừa Thiên - Huế.Năm 1972, trong một trận ném bom của máy bay B-52, chỉ huy sở của đơn vị bị đánh sập, hàng chục cán bộ, chiến sĩ hy sinh, Chính ủy Đinh Thế Hinh bị vùi trong đất đá. Tưởng ông đã hy sinh, đồng đội chuẩn bị khâm liệm. Nhưng kỳ diệu thay, sau nhiều giờ hôn mê, ông bất ngờ tỉnh dậy và dùng hết sức đạp tung tấm nylon phủ trên người. Mọi người òa khóc khi thấy ông vẫn còn sống.Sau ba ngày cấp cứu, ông hồi phục và trở lại đơn vị. Ký ức đau thương đó trở thành dấu ấn không thể phai mờ trong cuộc đời binh nghiệp của vị sư xuất trận.Sau ngày đất nước hoàn toàn thống nhất, Đại tá Đinh Thế Hinh nghỉ hưu, nhưng vẫn tiếp tục việc đạo. Ông trở về đời sống cư sĩ, tiếp tục cống hiến cho đạo pháp bằng cách viết bài, giảng giải giáo lý nhà Phật, phổ biến tư tưởng nhập thế cho lớp trẻ.Ông cộng tác với nhiều tạp chí Phật giáo, viết các bài bình luận về triết lý nhân sinh, đạo đức ứng xử trong xã hội hiện đại. Với giọng văn mộc mạc, ông không nói những lời quá cao siêu về đạo Phật, mà viết cho con người, cho đời sống và lương tri. Không ngày nào ông không đọc sách Phật, viết bài, soạn tài liệu. Trong căn hộ nhỏ, hàng trăm cuốn sách vẫn được ông gìn giữ, trân trọng như bảo vật. Ông từng tâm sự: “Tu hành là sự lựa chọn của tâm, không nhất thiết phải ở chùa. Hộ quốc an dân, giúp đời, truyền đạo cũng là tu hành”.','http://image.congan.com.vn/thumbnail/CATP-1366-2025-5-15/6a-2.jpg'],
     coords: [{ lat: 20.3229, lng: 106.1977 }],
     tags: ['phật giáo','quân đội','anh hùng']
   },
+
   {
     id: 'p9',
-    name: 'Thượng tọa Thích Tâm Vượng',
-    religion: 'Phật giáo',
-    period: 'Hiện đại (Thế kỷ XXI)',
-    birthDeath: '',
-    bio: 'Thượng tọa Thích Tâm Vượng, Viện chủ chùa Cổ Lễ (Nam Định), từng tham gia chiến đấu bảo vệ Tổ quốc trước khi trở lại đời sống tu hành. Ông kế tục và phát huy tinh thần yêu nước của các bậc tiền bối trong thời bình.',
-    contributions: [
-      'Tham gia chiến đấu bảo vệ Tổ quốc',
-      'Kế thừa và phát huy truyền thống yêu nước của Phật giáo chùa Cổ Lễ',
-      'Đóng góp cho công tác hoằng pháp và xây dựng đoàn kết tôn giáo'
-    ],
-    imageUrl: '/images/thich-tam-vuong.jpg',
-    gallery: [],
-    coords: [{ lat: 20.3229, lng: 106.1977 }],
-    tags: ['phật giáo','truyền thống','xây dựng đất nước']
-  },
-  {
-    id: 'p10',
-    name: 'Hòa thượng Thích Bảo Nghiêm',
-    religion: 'Phật giáo',
-    period: 'Quốc hội khóa XV (2021–2026)',
-    birthDeath: '',
-    bio: 'Phó Chủ tịch Hội đồng Trị sự kiêm Trưởng Ban Hoằng pháp Trung ương GHPGVN, Đại biểu Quốc hội nhiều khóa, đại diện tiếng nói của Phật giáo tại nghị trường.',
-    contributions: [
-      'Đại biểu Quốc hội các khóa XIII, XIV, XV',
-      'Đóng góp cho công tác hoằng pháp và xây dựng chính sách tôn giáo',
-      'Góp phần xây dựng khối đại đoàn kết toàn dân tộc'
-    ],
-    imageUrl: '/images/thich-bao-nghiem.jpg',
-    gallery: [],
-    coords: [{ lat: 21.0278, lng: 105.8342 }],
-    tags: ['phật giáo','quốc hội','đại đoàn kết']
-  },
-  {
-    id: 'p11',
     name: 'Hòa thượng Thích Thanh Quyết',
     religion: 'Phật giáo',
     period: 'Quốc hội khóa XV (2021–2026)',
-    birthDeath: '',
+    birthDeath: '1962-Hiện tại',
     bio: 'Phó Chủ tịch Hội đồng Trị sự Trung ương, Trưởng Ban Trị sự GHPGVN tỉnh Quảng Ninh, đại biểu Quốc hội nhiều khóa, đóng góp cho công tác dân vận và phát triển vùng Phật giáo Quảng Ninh.',
     contributions: [
       'Đại biểu Quốc hội các khóa XIII, XIV, XV',
       'Phát triển Phật giáo tại vùng Đông Bắc',
       'Tham gia xây dựng chính sách pháp luật liên quan đến tôn giáo'
     ],
-    imageUrl: '/images/thich-thanh-quyet.jpg',
+    imageUrl: 'https://tse2.mm.bing.net/th/id/OIP.c9m4S6h-KHGeNPe_FUfJ8AHaE7?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3',
     gallery: [],
     coords: [{ lat: 20.9500, lng: 107.0833 }],
     tags: ['phật giáo','chính sách','đại đoàn kết']
   },
   {
-    id: 'p12',
-    name: 'Thượng tọa Thích Đức Thiện',
-    religion: 'Phật giáo',
-    period: 'Quốc hội khóa XV (2021–2026)',
-    birthDeath: '',
-    bio: 'Phó Chủ tịch kiêm Tổng Thư ký Hội đồng Trị sự GHPGVN, đại biểu Quốc hội khóa XV (tỉnh Điện Biên), đại diện thế hệ tăng sĩ trẻ có học vấn và năng lực quản lý.',
-    contributions: [
-      'Đóng góp vào công tác điều hành và cải tiến tổ chức GHPGVN',
-      'Thúc đẩy các hoạt động giao lưu tôn giáo quốc tế',
-      'Đại diện Phật giáo tham gia xây dựng luật và chính sách quốc gia'
-    ],
-    imageUrl: '/images/thich-duc-thien.jpg',
-    gallery: [],
-    coords: [{ lat: 21.3833, lng: 103.0167 }],
-    tags: ['phật giáo','lãnh đạo trẻ','chính sách']
-  },
-  {
-    id: 'p13',
-    name: 'Thượng tọa Lý Minh Đức',
-    religion: 'Phật giáo Nam tông Khmer',
-    period: 'Quốc hội khóa XV (2021–2026)',
-    birthDeath: '',
-    bio: 'Phó Trưởng Ban Trị sự GHPGVN tỉnh Sóc Trăng, đại biểu Quốc hội khóa XIV–XV, đại diện cộng đồng Phật giáo Nam tông Khmer, góp phần củng cố đoàn kết dân tộc và tôn giáo vùng Tây Nam Bộ.',
-    contributions: [
-      'Đại biểu Quốc hội khóa XIV–XV',
-      'Đóng góp phát triển vùng Khmer Nam Bộ',
-      'Tăng cường đoàn kết tôn giáo và dân tộc'
-    ],
-    imageUrl: '/images/ly-minh-duc.jpg',
-    gallery: [],
-    coords: [{ lat: 9.6034, lng: 105.9739 }],
-    tags: ['khmer','phật giáo','đoàn kết']
-  },
-  {
-    id: 'p14',
+    id: 'p10',
     name: 'Linh mục Nguyễn Văn Riễn',
     religion: 'Công giáo',
     period: 'Quốc hội khóa XV (2021–2026)',
-    birthDeath: '',
-    bio: 'Chánh xứ Giáo xứ Thánh Giuse (Phú Cường), Phó Chủ tịch kiêm Tổng Thư ký Ủy ban Đoàn kết Công giáo Việt Nam, đại biểu Quốc hội khóa XIV–XV, đóng góp tích cực cho đoàn kết tôn giáo và công tác xã hội.',
+    birthDeath: '1955- Hiện tại',
+    bio: 'Gioan Baotixita Nguyễn Văn Riễn, tên thật là Nguyễn Văn Riễn, sinh ngày 20 tháng 12 năm 1955 tại xã An Tràng, huyện Quỳnh Phụ, tỉnh Thái Bình, thuộc giáo xứ Tràng Lũ, giáo phận Thái Bình. Ông có bằng cử nhân Thần học.Năm 1987, ông được thụ phong linh mục và bổ nhiệm làm phó xứ giáo xứ Kỉnh Nhượng (ấp Trảng Sắn, xã Vĩnh Hòa, huyện Phú Giáo, Bình Dương). Sau khi linh mục chánh xứ Đaminh Đinh Khắc Túc qua đời (1994), ông được giao làm chánh xứ, gắn bó với Kỉnh Nhượng suốt 26 năm, trước đó có 6 năm làm thầy và phó tế mục vụ cũng tại đây.Năm 2013, linh mục Nguyễn Văn Riễn được giao phụ trách giáo điểm trên đường Huỳnh Văn Lũy, thành phố Thủ Dầu Một (Bình Dương). Nơi ông phục vụ là huyện vùng sâu, vùng xa Phú Giáo, đời sống người dân còn nhiều khó khăn. Thấu hiểu hoàn cảnh ấy, ông đã vận động các nhà hảo tâm trong và ngoài nước để hỗ trợ cộng đồng:Mở đường từ ngã ba Cống Triết đến ấp 5 xã Vĩnh Hòa, giúp học sinh và người dân đi lại thuận tiện hơn.Hiến tặng 4.500m² đất để xây xóm tình thương cho hơn 22 hộ gia đình, trong đó 14 căn nhà được hỗ trợ kinh phí xây dựng hoàn toàn.Đóng góp và vận động làm 600m đường, kéo điện hạ thế, giúp người dân ổn định cuộc sống.Hằng năm, ông trích quỹ giáo xứ và nguồn tài trợ để cấp học bổng cho hơn 20 học sinh nghèo hiếu học (500.000 đồng/em/tháng).Những việc làm thiết thực, nhân ái và hướng về cộng đồng đã khiến linh mục Nguyễn Văn Riễn được người dân yêu mến, tín nhiệm.Năm 2016, ông được Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam giới thiệu ứng cử Đại biểu Quốc hội khóa XIV (2016–2021). Sau hội nghị cử tri xã Vĩnh Hòa, tất cả các ý kiến đều tín nhiệm cao với linh mục Nguyễn Văn Riễn.Kết quả, trong cuộc bầu cử ngày 22 tháng 5 năm 2016, linh mục Nguyễn Văn Riễn trúng cử, trở thành một trong 496 đại biểu Quốc hội Việt Nam khóa XIV – là vị linh mục tiêu biểu, vừa tận tụy với đạo, vừa gắn bó, đóng góp tích cực cho đời sống xã hội và cộng đồng.',
     contributions: [
       'Đại biểu Quốc hội khóa XIV–XV',
       'Lãnh đạo Ủy ban Đoàn kết Công giáo Việt Nam',
       'Thúc đẩy tinh thần “Sống tốt đời đẹp đạo” trong cộng đồng Công giáo'
     ],
-    imageUrl: '/images/nguyen-van-rien.jpg',
+    imageUrl: 'https://cdn.nhandan.vn/images/7f491ee6c6b660425d7c9ab03f1ec447bef618bebd84e30ce3d14a8c4fc347f89224014c956d8f052400163400f68446240099d3ec05445006d6fe428bbf6211/1505ctdtvlm-1621067069349.jpg',
     gallery: [],
     coords: [{ lat: 11.3254, lng: 106.4770 }],
     tags: ['công giáo','đại đoàn kết','xã hội']
+  },
+  {
+    id: 'p11',
+    name: 'CommingSoon...',
+    religion: 'CommingSoon...',
+    period: 'CommingSoon...',
+    birthDeath: 'CommingSoon...',
+    bio: 'Sinh Viên FPT ',
+    contributions: [
+      'CommingSoon...',
+      
+      
+    ],
+    imageUrl: 'https://png.pngtree.com/png-clipart/20230916/original/pngtree-coming-soon-label-vector-png-image_12240569.png',
+    gallery: [],
+    coords: [{ lat: 11.3254, lng: 106.4770 }],
+    tags: ['sinh viên','đại đoàn kết','xã hội']
   }
 ];

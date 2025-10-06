@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import { persons } from '../data/courseData';
-// File _personpage.scss bạn đã tạo trước đó
 import '../styles/pages/_personpage.scss'; 
 
 const PersonPage: React.FC = () => {
   const { personId } = useParams<{ personId: string }>();
   const navigate = useNavigate();
   
+  // State để quản lý lightbox
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+
   const person = persons.find(p => p.id === personId);
 
   if (!person) {
     return (
       <MainLayout>
-        <div className="container">
-          <h2>Không tìm thấy nhân vật</h2>
-          <button onClick={() => navigate('/persons')}>Quay lại danh sách</button>
+        <div className="container person-page--error">
+          <h2 className="section-title">Không tìm thấy nhân vật</h2>
+          <p className="section-subtitle">Có thể liên kết đã hỏng hoặc nhân vật này không tồn tại.</p>
+          <button onClick={() => navigate('/persons')} className="cta-button">
+            Quay lại danh sách
+          </button>
         </div>
       </MainLayout>
     );
@@ -24,50 +29,92 @@ const PersonPage: React.FC = () => {
 
   return (
     <MainLayout>
-      <div className="person-page container">
+      <div className="person-page-container">
           {/* Breadcrumb */}
-          <nav className="person-page__breadcrumb">
+          <nav className="person-breadcrumb container">
             <Link to="/">Trang chủ</Link> / <Link to="/persons">Nhân vật</Link> / <span>{person.name}</span>
           </nav>
 
-          {/* Nội dung chính */}
-          <div className="person-page__grid">
-              <div className="person-page__main-content">
-                  <header className="person-page__header">
-                      <img src={person.imageUrl || 'https://placehold.co/400x400'} alt={`Chân dung của ${person.name}`} className="person-page__portrait" />
-                      <div className="person-page__header-info">
-                          <h1>{person.name}</h1>
-                          <p><strong>Tôn giáo:</strong> {person.religion || 'Không rõ'}</p>
-                          <p><strong>Thời kỳ:</strong> {person.period || 'Không rõ'}</p>
-                          <p><strong>Năm sinh - Năm mất:</strong> {person.birthDeath || 'Không rõ'}</p>
-                          <div className="person-page__tags">
-                              {person.tags?.map(tag => <span key={tag} className="person-page__tag">{tag}</span>)}
-                          </div>
+          {/* Hero Section */}
+          <header className="person-hero" style={{ backgroundImage: `url(${person.imageUrl || ''})`}}>
+              <div className="person-hero__overlay"></div>
+              <div className="person-hero__content container">
+                  <div className="person-hero__portrait-wrapper">
+                      <img src={person.imageUrl || 'https://placehold.co/400x400/333/fff?text=N/A'} alt={`Chân dung của ${person.name}`} className="person-hero__portrait" />
+                  </div>
+                  <div className="person-hero__info">
+                      <h1 className="person-hero__name">{person.name}</h1>
+                      <p className="person-hero__period">{person.period} ({person.birthDeath || 'Không rõ'})</p>
+                      <div className="person-hero__tags">
+                          {person.tags?.map(tag => (
+                            <span key={tag} className="person-hero__tag">#{tag}</span>
+                          ))}
                       </div>
-                  </header>
-                  <section>
-                      <h2>Tiểu sử</h2>
-                      <p>{person.bio}</p>
+                  </div>
+              </div>
+          </header>
+
+          {/* Main Content Grid */}
+          <div className="person-main-grid container">
+              <article className="person-main-content">
+                  <section id="bio" className="person-section">
+                      <h2 className="person-section__title">Tiểu sử</h2>
+                      <p className="person-section__text">{person.bio}</p>
                   </section>
-                  <section>
-                      <h2>Đóng góp chính</h2>
-                      <ul>
+                  <section id="contributions" className="person-section">
+                      <h2 className="person-section__title">Đóng góp chính</h2>
+                      <ul className="person-section__list">
                           {person.contributions?.map((item, index) => <li key={index}>{item}</li>)}
                       </ul>
                   </section>
-              </div>
+              </article>
               
-              <aside className="person-page__sidebar">
-                  {/* Có thể thêm các thông tin phụ, gallery, bản đồ ở đây */}
-                  <h3>Thư viện hình ảnh</h3>
-                   <div className="person-page__gallery">
-                        {person.gallery?.map((img, index) => (
-                            <img key={index} src={img} alt={`Hình ảnh ${index + 1} của ${person.name}`} loading="lazy" />
-                        ))}
-                   </div>
+              <aside className="person-sidebar">
+                  <div className="quick-facts-card">
+                      <h3 className="quick-facts-card__title">Thông tin tóm tắt</h3>
+                      <div className="quick-facts-card__item">
+                          <strong>Tên đầy đủ</strong>
+                          <span>{person.name}</span>
+                      </div>
+                      <div className="quick-facts-card__item">
+                          <strong>Tôn giáo</strong>
+                          <span>{person.religion || 'Không rõ'}</span>
+                      </div>
+                      <div className="quick-facts-card__item">
+                          <strong>Thời kỳ</strong>
+                          <span>{person.period || 'Không rõ'}</span>
+                      </div>
+                      <div className="quick-facts-card__item">
+                          <strong>Sinh - Mất</strong>
+                          <span>{person.birthDeath || 'Không rõ'}</span>
+                      </div>
+                  </div>
+
+                  {person.gallery && person.gallery.length > 0 && (
+                      <div className="gallery-card">
+                          <h3 className="gallery-card__title">Thư viện hình ảnh</h3>
+                          <div className="gallery-card__grid">
+                              {person.gallery.map((img, index) => (
+                                  <button key={index} className="gallery-card__thumbnail" onClick={() => setLightboxImage(img)}>
+                                      <img src={img} alt={`Hình ảnh ${index + 1} của ${person.name}`} loading="lazy" />
+                                  </button>
+                              ))}
+                          </div>
+                      </div>
+                  )}
               </aside>
           </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <div className="lightbox" onClick={() => setLightboxImage(null)} role="dialog" aria-modal="true">
+          <div className="lightbox__content" onClick={(e) => e.stopPropagation()}>
+            <img src={lightboxImage} alt="Hình ảnh được phóng to" />
+            <button className="lightbox__close" onClick={() => setLightboxImage(null)} aria-label="Đóng">&times;</button>
+          </div>
+        </div>
+      )}
     </MainLayout>
   );
 };
